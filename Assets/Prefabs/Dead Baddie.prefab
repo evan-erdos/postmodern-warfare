@@ -12,7 +12,7 @@ GameObject:
   - 50: {fileID: 5041574}
   - 61: {fileID: 6140162}
   - 114: {fileID: 11485330}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chunk (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +31,7 @@ GameObject:
   - 199: {fileID: 19949820}
   - 114: {fileID: 11466188}
   - 114: {fileID: 11405806}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Smoke Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50,7 +50,7 @@ GameObject:
   - 199: {fileID: 19987522}
   - 114: {fileID: 11450798}
   - 114: {fileID: 11404324}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Smoke Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ GameObject:
   - 199: {fileID: 19992592}
   - 114: {fileID: 11479098}
   - 114: {fileID: 11403332}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Smoke Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - 50: {fileID: 5077762}
   - 61: {fileID: 6189800}
   - 114: {fileID: 11454904}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chunk (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - 50: {fileID: 5064522}
   - 61: {fileID: 6142632}
   - 114: {fileID: 11407718}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chunk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   - 50: {fileID: 5070856}
   - 61: {fileID: 6177262}
   - 114: {fileID: 11445802}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: chunk (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -145,7 +145,7 @@ GameObject:
   - 199: {fileID: 19972500}
   - 114: {fileID: 11482526}
   - 114: {fileID: 11492240}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Smoke Trail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 198256}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.768044, y: -38.673153, z: 0}
+  m_LocalPosition: {x: 30.996712, y: -55.355377, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 439962}

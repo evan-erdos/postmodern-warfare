@@ -25,7 +25,7 @@ get_gun: !!message
     Spectacular! You picked it up. 
     My studies of **EARTH** have informed me that the thing you picked up is called a **GUN**. 
     It is a **WEAPON** used to **HURT THINGS**. 
-    Why don’t you give it a go? Press **K**.
+    Try it! Press **K**.
 
 throw_gun: !!message
   trigger: Event

@@ -1,5 +1,5 @@
 
-MallowDog 3 : Postmodern Warfare v0.1.0
+MallowDog 3 : Postmodern Warfare v0.2.1
 =======================================
 
 [![mit-license](http://img.shields.io/:license-MIT-blue.svg?style=plastic)](http://bescott.mit-license.org)
@@ -15,7 +15,7 @@ Instructions
 
 The latest build of this game for your platform can be found [here][].
 
-[here]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/v0.1.0>
+[here]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/v0.2.1>
 
 ---
 
@@ -23,13 +23,26 @@ The latest build of this game for your platform can be found [here][].
 How To Play
 -----------
 
-We don't even know!
+Run Mallowdog.app on a Mac OSX computer
 
 ---
 
 
 Changelog
 ---------
+
+### Version 0.2.1 ###
+
+- Basic Enemies!
+
+- A tutorial!
+
+- Narration Texts!
+
+- Yaml Data Serialization!
+
+- much, much more!
+
 
 ### Version 0.1.0 ###
 

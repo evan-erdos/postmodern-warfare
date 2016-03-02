@@ -13,7 +13,7 @@ public class LoadSceneOnClick : MonoBehaviour {
 		if (wait) yield break;
 		wait = true;
 		CameraFade.StartAlphaFade(
-            new Color(0,0,0),false,0f,delay,
+            new Color(0,0,0),false,1f,delay,
             ()=> {
                 if (!Camera.main) return;
                 Camera.main.cullingMask = 0;

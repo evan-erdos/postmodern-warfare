@@ -37,7 +37,7 @@ public class EventTriggerer2D : MonoBehaviour {
 		m_MessageEvent.Invoke();
 	}
 
-	public void OnEvent() { print("something happened!"); }
+	public void OnEvent() { }//print("something happened!"); }
 }
 
 

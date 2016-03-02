@@ -15,9 +15,9 @@ public class Baddie : MonoBehaviour, IDamageable {
 	public GameObject deadReplacement;
 	public GameObject explosion;
 
-	public UnityEvent m_ClickEvent;
+	public UnityEvent m_killEvent;
 
-	public void Click() {
+	public void Kill() {
 		isAlive = !isAlive;
 		if (explosion) {
 			Object.Instantiate(explosion,transform.position,Quaternion.identity);
@@ -41,7 +41,7 @@ public class Baddie : MonoBehaviour, IDamageable {
 
 	public void Apply(float damage) {
 		if (damage > 0) {
-			m_ClickEvent.Invoke();
+			m_killEvent.Invoke();
 			Die();
 		}
 	}
@@ -50,9 +50,9 @@ public class Baddie : MonoBehaviour, IDamageable {
 		rb2d = gameObject.GetComponent<Rigidbody2D>();
 		bc2d = gameObject.GetComponent<BoxCollider2D>();
 
-		if (m_ClickEvent==null)
-			m_ClickEvent = new UnityEvent();
-		m_ClickEvent.AddListener(Click);
+		if (m_killEvent==null)
+			m_killEvent = new UnityEvent();
+		m_killEvent.AddListener(Kill);
 	}
 }
 

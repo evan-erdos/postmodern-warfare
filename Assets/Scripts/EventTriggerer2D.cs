@@ -4,6 +4,8 @@ using System.Collections;
 
 public class EventTriggerer2D : MonoBehaviour {
 
+	bool wasUsed;
+
 	public MessageTrigger trigger;
 
 	Collider2D coll;
@@ -12,6 +14,7 @@ public class EventTriggerer2D : MonoBehaviour {
 
 	public float delay;
 
+	public bool isSingleUse;
 
 	void Awake() {
 		coll = GetComponent<Collider2D>();
@@ -34,10 +37,11 @@ public class EventTriggerer2D : MonoBehaviour {
 
 	void OnCollisionEnter2D(Collision2D c) {
 		if (trigger!=MessageTrigger.Collider) return;
+		if (isSingleUse && wasUsed) return;
 		m_MessageEvent.Invoke();
 	}
 
-	public void OnEvent() { }//print("something happened!"); }
+	public void OnEvent() { wasUsed = true; }//print("something happened!"); }
 }
 
 

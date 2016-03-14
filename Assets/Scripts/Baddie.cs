@@ -61,21 +61,31 @@ public class Baddie : MonoBehaviour, IDamageable {
 		m_killEvent.AddListener(Kill);
 	}
 
+	void Throw(GameObject target) {
+		var instance = Object.Instantiate(
+			projectile,
+			transform.position,
+			Quaternion.identity) as GameObject;
+		var trajectory = new Vector2(
+			target.transform.position.x-transform.position.x,
+			target.transform.position.y-transform.position.y);
+		instance.GetComponent<Rigidbody2D>().AddForce(
+			trajectory*force,ForceMode2D.Impulse);
+	}
+
 	IEnumerator Throwing(GameObject target) {
 		if (wait) yield break;
 		wait = true;
-		if (projectile && target) {
-			var instance = Object.Instantiate(
-				projectile,
-				transform.position,
-				Quaternion.identity) as GameObject;
-			var trajectory = new Vector2(
-				target.transform.position.x-transform.position.x,
-				target.transform.position.y-transform.position.y);
-			instance.GetComponent<Rigidbody2D>().AddForce(
-				trajectory*force,ForceMode2D.Impulse);
-		}
+		transform.localScale = new Vector3(
+			(target.transform.position.x>transform.position.x)?(1):(-1),
+			transform.localScale.y,
+			transform.localScale.z);
+		if (projectile && target)
+			Throw(target);
 		yield return new WaitForSeconds(delay);
+		if (projectile && target)
+			Throw(target);
+		yield return new WaitForSeconds(delay/2);
 		wait = false;
 	}
 

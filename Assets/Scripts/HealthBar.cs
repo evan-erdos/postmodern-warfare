@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour {
 
 
 
-	void Awake() {
+	void Start() {
 		if (!player)
 			throw new System.Exception("No Player");
 		scrollbar = GetComponent<ui::Scrollbar>();

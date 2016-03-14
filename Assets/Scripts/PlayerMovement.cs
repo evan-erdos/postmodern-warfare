@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -7,6 +8,7 @@ using System.Collections.Generic;
 public class PlayerMovement : MonoBehaviour {
 
 	bool wait;
+	float reloadDelay = 3f;
 	public float speed;
 	public float speedForce = 50f;
 	public float maxSpeed = 10f;
@@ -70,6 +72,13 @@ public class PlayerMovement : MonoBehaviour {
 		wait = false;
 	}
 
+	IEnumerator Killing() {
+		yield return new WaitForSeconds(reloadDelay);
+		print("asdf");
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+	}
+
+
 	public void Kill() {
 		if (!corpse) return;
 		var replacement = Object.Instantiate(
@@ -79,6 +88,7 @@ public class PlayerMovement : MonoBehaviour {
 		foreach (var rb in replacement.GetComponentsInChildren<Rigidbody2D>())
 			rb.velocity = _rigidbody2D.velocity;
 		Destroy(gameObject);
+		StartCoroutine(Killing());
 	}
 
 

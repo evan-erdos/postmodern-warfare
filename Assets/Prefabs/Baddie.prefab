@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 108262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 47.8, y: -3.71, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 92.96714, y: 38.789467, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,10 +73,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7691d5b3790c4bcc97e92391f0b6692, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isAlive: 0
-  explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
+  range: 16
+  delay: 2
+  force: 2
   deadReplacement: {fileID: 198256, guid: 8ebbce4e93abc4718802102bad6824a7, type: 2}
-  m_ClickEvent:
+  projectile: {fileID: 176440, guid: 58f485372baf042c1a73925a5ad7e988, type: 2}
+  explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
+  m_killEvent:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,

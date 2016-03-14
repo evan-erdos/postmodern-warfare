@@ -22,8 +22,8 @@ get_gun: !!message
   desc: >
     **<red>S</red><orange>P</orange><yellow>E</yellow><green>C</green><blue>T</blue><green>A</green><yellow>C</yellow><orange>U</orange><red>L</red><orange>A</orange><yellow>R</yellow>**!  You picked it up. My studies of **EARTH** have informed me that the thing you picked up is called a **GUN**.
     It is a **WEAPON** used to **HURT THINGS**. 
-    Why don’t you give it a go? Press **K** or **X**, 
-    and throw it at those harmless boxes over there.
+    Why don’t you give it a go? Press **K** or **X**. 
+    Try it!
 
 throw_gun: !!message
   trigger: Event

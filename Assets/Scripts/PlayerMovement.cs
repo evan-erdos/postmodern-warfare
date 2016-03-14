@@ -11,13 +11,24 @@ public class PlayerMovement : MonoBehaviour {
 	public float speedForce = 50f;
 	public float maxSpeed = 10f;
 	public float jumpForce = 150f;
-	Rigidbody2D rb2d;
+	public float maxHealth = 350f;
+	Rigidbody2D _rigidbody2D;
 	Animator anim;
 	public GameObject potentialGun;
 	public LayerMask layerMask;
 	public GameObject gun;
+	public GameObject corpse;
 	public AudioClip stretchSound;
 	public AudioClip squishSound;
+
+
+	public float Health {
+		get { return health; }
+		private set {
+			health = value;
+			if (health<0) Kill();
+		}
+	} float health;
 
 
 	public bool HasGun {get;set;}
@@ -36,15 +47,18 @@ public class PlayerMovement : MonoBehaviour {
 
 	public float Radius { get { return 2f; } }
 
+
+	public void Apply(float damage) { Health -= damage; }
+
+
 	void Awake() {
 		layerMask = ~LayerMask.NameToLayer("Gun");
-			//~(LayerMask.NameToLayer("Gun")
-			//& LayerMask.NameToLayer("Powerup"));
+		_rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+		anim = gameObject.GetComponent<Animator>();
 	}
 
 	void Start() {
-		rb2d = gameObject.GetComponent<Rigidbody2D>();
-		anim = gameObject.GetComponent<Animator>();
+		health = maxHealth;
 	}
 
 
@@ -54,6 +68,17 @@ public class PlayerMovement : MonoBehaviour {
 		GetComponent<AudioSource>().PlayOneShot(clip, volume);
 		yield return new WaitForSeconds(clip.length);
 		wait = false;
+	}
+
+	public void Kill() {
+		if (!corpse) return;
+		var replacement = Object.Instantiate(
+			corpse,
+			transform.position,
+			transform.rotation) as GameObject;
+		foreach (var rb in replacement.GetComponentsInChildren<Rigidbody2D>())
+			rb.velocity = _rigidbody2D.velocity;
+		Destroy(gameObject);
 	}
 
 
@@ -135,13 +160,13 @@ public class PlayerMovement : MonoBehaviour {
 		GetComponent<BoxCollider2D>().offset = new Vector2(
 			0, (IsSquishing)?(-0.65f):(0.1f));
 		float h = Input.GetAxis("Horizontal");
-		rb2d.AddForce((Vector2.right*speedForce)*h);
-		if (rb2d.velocity.x > maxSpeed)
-			rb2d.velocity = new Vector2(maxSpeed, rb2d.velocity.y);
-		else if (rb2d.velocity.x<-maxSpeed)
-			rb2d.velocity = new Vector2(-maxSpeed, rb2d.velocity.y);
+		_rigidbody2D.AddForce((Vector2.right*speedForce)*h);
+		if (_rigidbody2D.velocity.x > maxSpeed)
+			_rigidbody2D.velocity = new Vector2(maxSpeed, _rigidbody2D.velocity.y);
+		else if (_rigidbody2D.velocity.x<-maxSpeed)
+			_rigidbody2D.velocity = new Vector2(-maxSpeed, _rigidbody2D.velocity.y);
 		if (IsJumping) {
-			rb2d.AddForce(Vector2.up * jumpForce);
+			_rigidbody2D.AddForce(Vector2.up * jumpForce);
 			IsJumping = false;
 		} if (gun && gun.transform.parent==transform)
 			gun.transform.localPosition = Vector3.zero;

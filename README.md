@@ -1,35 +1,34 @@
 
-MallowDog 3 : Postmodern Warfare v0.2.1
-=======================================
-
-[![mit-license](http://img.shields.io/:license-MIT-blue.svg?style=plastic)](http://bescott.mit-license.org)
-
----
+MallowDog 3 : Postmodern Warfare [![v]][tag] [![mit]][license]
+==============================================================
 
 Because sometimes, you just can't possibly understand.
 Developed by Succulent Studios.
 
-
-Instructions
-------------
-
-The latest build of this game for your platform can be found [here][].
-
-[here]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/v0.2.1>
-
 ---
+[mit]: <http://img.shields.io/:license-MIT-blue.svg?style=plastic>
+[license]: <http://bescott.mit-license.org>
+[v]: <https://img.shields.io/badge/version-0.2.1-blue.svg?style=plastic>
+[tag]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/0.2.1>
 
 
-How To Play
------------
 
-Run Mallowdog.app on a Mac OSX computer
+## Instructions ##
 
----
+The latest build of this game for your platform can be found [here][tag].
 
 
-Changelog
----------
+## How To Play ##
+
+| Controls                   |                   |
+|----------------------------|-------------------|
+| **LEFT** & **RIGHT ARROW** | move around       |
+| **UP** & **DOWN ARROW**    | stretch / squeeze |
+| **SPACEBAR**               | jump              |
+| **X**                      | pick up / throw   |
+
+
+## Changelog ##
 
 ### Version 0.2.1 ###
 

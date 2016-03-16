@@ -1,0 +1,31 @@
+%YAML 1.1
+---
+
+init: !!message
+  trigger: Time
+  desc: >
+    This is the start of Level 1!
+
+solve_puzzle: !!message
+  trigger: Time
+  desc: >
+    Amazing!
+    The creatures who live on this planet also have an **ODD PROPENSITY** to **PUZZLES**. 
+    These **PUZZLES** are **ANNOYING** and I **DISLIKE** them. 
+    You will have to **SOLVE** them **SOMETIMES**. Solve this one!
+
+kill_guard: !!message
+  trigger: Event
+  desc: >
+    ...Radical! That is another **EARTH EXPRESSION**. OK.
+    Now you are going to have to **HURT** that **GUARD** with your **GUN**. 
+    Good luck. Try not to die. 
+
+goodbye: !!message
+  trigger: Event
+  desc: |
+    ...**NAILED IT**! 
+    **GOOD**. Now I am going to **LEAVE YOU TO YOUR BUSINESS**. 
+    Please jump down that tube.
+
+...

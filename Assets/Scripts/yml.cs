@@ -7,6 +7,7 @@ using DateTime=System.DateTime;
 using Type=System.Type;
 using YamlDotNet.Serialization;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public static class yml {
@@ -48,7 +49,9 @@ public static class yml {
             deserializer.RegisterTagMapping(
                 pre+tag.Key, tag.Value);
 
-        var files = new[] { "messages" };
+        var currentFile = SceneManager.GetActiveScene().name;
+
+        var files = new[] { "messages", currentFile };
 
         foreach (var file in files)
             foreach (var kvp in deserializer.Deserialize<Dictionary<string,Message>>(

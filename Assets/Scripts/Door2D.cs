@@ -14,7 +14,7 @@ public class Door2D : MonoBehaviour {
 		get { return isOpen; }
 		set {
 			isOpen = value;
-			target = (IsOpen)?open:init;
+			target = (isOpen)?open:init;
 		}
 	} bool isOpen;
 

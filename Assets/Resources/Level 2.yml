@@ -1,0 +1,9 @@
+%YAML 1.1
+---
+
+init: !!message
+  trigger: Time
+  desc: >
+    This is the start of Level 2!
+
+...

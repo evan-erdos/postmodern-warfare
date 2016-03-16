@@ -47,7 +47,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 3
+  m_Constraints: 7
 --- !u!61 &6127614
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -59,9 +59,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.120582394, y: -0.013028622}
+  m_Offset: {x: 0.08357125, y: -0.013028622}
   serializedVersion: 2
-  m_Size: {x: 0.6792841, y: 2.630984}
+  m_Size: {x: 0.61123353, y: 2.630984}
 --- !u!114 &11446782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -76,7 +76,7 @@ MonoBehaviour:
   range: 16
   delay: 2
   force: 2
-  deadReplacement: {fileID: 198256, guid: 8ebbce4e93abc4718802102bad6824a7, type: 2}
+  deadReplacement: {fileID: 198256, guid: 9721fef70cc4d44eeaa9d171800c3f99, type: 2}
   projectile: {fileID: 176440, guid: 58f485372baf042c1a73925a5ad7e988, type: 2}
   explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
   m_killEvent:

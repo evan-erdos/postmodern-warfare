@@ -3,7 +3,7 @@
 
 dead: !!message
   desc: |
-    ### \*\*\* YOU HAVE DIED. \*\*\* ###
+    ### \*\*\* YOU HAVE <rainbow>DIED</rainbow>. \*\*\* ###
     **Would you like to Restore, Restart, or Quit?**
 
 dumb: !!message

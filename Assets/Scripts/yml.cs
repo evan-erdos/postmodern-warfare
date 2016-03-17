@@ -137,7 +137,7 @@ public static class yml {
      *    `string` to be formatted.
      **/
     public static string md(this string s) {
-        return new Buffer(Markdown.Transform(s))
+        return new Buffer(Markdown.Transform(s).rainbow())
             .Replace("<em>","<i>")
             .Replace("</em>","</i>")
             .Replace("<blockquote>","<i>")
@@ -180,6 +180,39 @@ public static class yml {
             .Replace("</violet>", "</color>")
             .ToString();
     }
+
+    public static string rainbow(this string s) {
+        var buffer = new Buffer();
+        var tag = new Regex(@"<rainbow>");
+        var end = "</rainbow>";
+        var i = 0;
+        var color = "</color>";
+        var colors = new string[] {
+            "<color=#f26a6a>",
+            "<color=#f6a72e>",
+            "<color=#fff16b>",
+            "<color=#73d279>",
+            "<color=#73aed2>",
+            "<color=#b695ea>",
+            "<color=#d495ea>"};
+        var list = tag.Split(s);
+        foreach (string line in list) {
+            Debug.Log(line);
+            if (line.EndsWith(end))
+                Debug.Log("asdv");
+
+        }
+
+        foreach (char letter in s) {
+            buffer.Append(colors[i%colors.Length]);
+            buffer.Append(letter);
+            buffer.Append(color);
+            i++;
+        } return buffer.ToString();
+    }
+
+
+
 
 
     /** `Replace()` : **`string`**

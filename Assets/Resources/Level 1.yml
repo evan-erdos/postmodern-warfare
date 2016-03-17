@@ -2,11 +2,13 @@
 ---
 
 init: !!message
+  delay: 4
   trigger: Time
   desc: >
     This is the start of Level 1!
 
 solve_puzzle: !!message
+  delay: 4
   trigger: Time
   desc: >
     Amazing!
@@ -15,6 +17,7 @@ solve_puzzle: !!message
     You will have to **SOLVE** them **SOMETIMES**. Solve this one!
 
 kill_guard: !!message
+  delay: 4
   trigger: Event
   desc: >
     ...Radical! That is another **EARTH EXPRESSION**. OK.
@@ -22,6 +25,7 @@ kill_guard: !!message
     Good luck. Try not to die. 
 
 goodbye: !!message
+  delay: 4
   trigger: Event
   desc: |
     ...**NAILED IT**! 

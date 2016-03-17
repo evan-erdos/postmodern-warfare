@@ -2,6 +2,7 @@
 ---
 
 init: !!message
+  delay: 4
   trigger: Time
   desc: >
     This is the start of Level 2!

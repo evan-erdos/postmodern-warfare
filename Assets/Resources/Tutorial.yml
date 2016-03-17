@@ -12,6 +12,7 @@ init: !!message
     **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>** back together!
 
 maybe_factory: !!message
+  delay: 4
   trigger: Event
   desc: >+
     Maybe your **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
@@ -19,6 +20,7 @@ maybe_factory: !!message
 
 
 near_gun: !!message
+  delay: 4
   trigger: Event
   desc: >+
     Oh! An **Earth gun**! Earthians use these to **HURT** eachother.
@@ -26,6 +28,7 @@ near_gun: !!message
     Press **K** or **X** to pick it up and **HURT** the **Guard**!.
 
 get_gun: !!message
+  delay: 4
   trigger: Event
   desc: >+
     Press **K** or **X** to use the gun!
@@ -37,6 +40,7 @@ get_gun: !!message
  #   Try it!
 
 throw_gun: !!message
+  delay: 4
   trigger: Event
   desc: >+
     Wondertastic! Oh! There's a 
@@ -54,6 +58,7 @@ throw_gun: !!message
     #
 
 solve_puzzle: !!message
+  delay: 4
   trigger: Time
   desc: >
     Amazing!
@@ -62,6 +67,7 @@ solve_puzzle: !!message
     You will have to **SOLVE** them **SOMETIMES**. Solve this one!
 
 kill_guard: !!message
+  delay: 4
   trigger: Event
   desc: >
     ...Radical! That is another **EARTH EXPRESSION**. OK.
@@ -69,6 +75,7 @@ kill_guard: !!message
     Good luck. Try not to die. 
 
 goodbye: !!message
+  delay: 4
   trigger: Event
   desc: |
     ...**NAILED IT**! 

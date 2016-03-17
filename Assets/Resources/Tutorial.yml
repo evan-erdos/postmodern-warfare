@@ -4,7 +4,6 @@
 init: !!message
   trigger: Time
   persist: true
-  delay: 4
   desc: >+
     Oh no, you've crashed on
     **<red>E</red><orange>A</orange><yellow>R</yellow><green>T</green><blue>H</blue>** !

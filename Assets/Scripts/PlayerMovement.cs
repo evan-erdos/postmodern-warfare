@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour {
 	public float maxSpeed = 10f;
 	public float jumpForce = 150f;
 	public float maxHealth = 350f;
+	public float stretchAmount = .9f;
+	public float squishAmount = -0.65f;
 	Rigidbody2D _rigidbody2D;
 	Animator anim;
 	public GameObject potentialGun;
@@ -166,9 +168,9 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate() {
 		GetComponent<BoxCollider2D>().size = new Vector2(
-			(IsStretching)?(.944f):(2f), (IsSquishing)?(0.5f):(2f));
+			(IsStretching)?(stretchAmount):(2f), (IsSquishing)?(0.5f):(2f));
 		GetComponent<BoxCollider2D>().offset = new Vector2(
-			0, (IsSquishing)?(-0.65f):(0.1f));
+			0, (IsSquishing)?(squishAmount):(0.1f));
 		float h = Input.GetAxis("Horizontal");
 		_rigidbody2D.AddForce((Vector2.right*speedForce)*h);
 		if (_rigidbody2D.velocity.x > maxSpeed)

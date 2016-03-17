@@ -11,14 +11,14 @@ init: !!message
     **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>** back together!
 
 maybe_factory: !!message
-  trigger: Event
+  trigger: Collider
   desc: >+
     Maybe your **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
     is in the **Peeps Factory**?
 
 
 near_gun: !!message
-  trigger: Event
+  trigger: Collider
   desc: >+
     Oh! An **Earth gun**! Earthians use these to **HURT** eachother.
 
@@ -38,16 +38,15 @@ get_gun: !!message
 throw_gun: !!message
   trigger: Event
   desc: >+
-    Wondertastic! Oh! There's a 
-    **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
+
+    **<red>W</red><orange>O</orange><yellow>N</yellow><green>D</green><blue>E</blue>
+    <red>R</red><orange>T</orange><yellow>A</yellow><green>S</green><blue>T</blue>
+    <red>I</red><orange>C</orange>** 
+
+    Oh look, a **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
     **<red>P</red><orange>A</orange><yellow>R</yellow><green>T</green>** !
 
 
-    #####My **INSTINCTS** tell me you might need it later.
-    #Since you are a marshmallow, you can **STRETCH**, **SQUISH**, and **Jump**!
-    #Then, you can fit into any **NOOK** or **CRANNY** you want.
-    #Press the **DOWN ARROW** and the **UP ARROW** to **STRETCH** or **SQUISH** yourself.
-    #Press **SPACE** to jump onto that platform over there!
 
 solve_puzzle: !!message
   trigger: Time
@@ -56,6 +55,13 @@ solve_puzzle: !!message
     The creatures who live on this planet also have an **ODD PROPENSITY** to **PUZZLES**. 
     These **PUZZLES** are **ANNOYING** and I **DISLIKE** them. 
     You will have to **SOLVE** them **SOMETIMES**. Solve this one!
+
+
+    ####My **INSTINCTS** tell me you might need it later.
+    #Since you are a marshmallow, you can **STRETCH**, **SQUISH**, and **Jump**!
+    #Then, you can fit into any **NOOK** or **CRANNY** you want.
+    #Press the **DOWN ARROW** and the **UP ARROW** to **STRETCH** or **SQUISH** yourself.
+    #Press **SPACE** to jump onto that platform over there!
 
 kill_guard: !!message
   trigger: Event

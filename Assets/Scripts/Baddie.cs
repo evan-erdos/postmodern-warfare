@@ -13,10 +13,12 @@ public class Baddie : MonoBehaviour, IDamageable {
 	public float delay = 2f;
 	public float force = 2f;
 
+
 	LayerMask layerMask;
 
 	Collider2D[] results = new Collider2D[10];
 
+	Transform target;
 	public GameObject deadReplacement;
 	public GameObject projectile;
 	public GameObject explosion;
@@ -24,14 +26,17 @@ public class Baddie : MonoBehaviour, IDamageable {
 
 	public void Kill() {
 		if (immune) return;
-		if (explosion)
-			Object.Instantiate(explosion,transform.position,Quaternion.identity);
+		if (explosion) {
+			var exp = Object.Instantiate(explosion,transform.position,Quaternion.identity) as GameObject;
+			exp.transform.parent = null;
+		}
 		GameObject temp;
 		if (deadReplacement) {
 			temp = Object.Instantiate(
 				deadReplacement,
 				transform.position,
 				Quaternion.identity) as GameObject;
+			temp.transform.parent = null;
 			var inner = temp.GetComponent<Baddie>();
 			if (inner) inner.Immune(2f);
 			foreach (var rb in temp.GetComponentsInChildren<Rigidbody2D>())
@@ -61,25 +66,21 @@ public class Baddie : MonoBehaviour, IDamageable {
 		m_killEvent.AddListener(Kill);
 	}
 
-	void Throw(GameObject target) {
+	void Throw(Transform target) {
 		var instance = Object.Instantiate(
 			projectile,
 			transform.position,
 			Quaternion.identity) as GameObject;
 		var trajectory = new Vector2(
-			target.transform.position.x-transform.position.x,
-			target.transform.position.y-transform.position.y);
+			target.position.x-transform.position.x,
+			target.position.y-transform.position.y);
 		instance.GetComponent<Rigidbody2D>().AddForce(
 			trajectory*force,ForceMode2D.Impulse);
 	}
 
-	IEnumerator Throwing(GameObject target) {
+	IEnumerator Throwing(Transform target) {
 		if (wait) yield break;
 		wait = true;
-		transform.localScale = new Vector3(
-			(target.transform.position.x>transform.position.x)?(1):(-1),
-			transform.localScale.y,
-			transform.localScale.z);
 		if (projectile && target)
 			Throw(target);
 		yield return new WaitForSeconds(delay);
@@ -91,12 +92,19 @@ public class Baddie : MonoBehaviour, IDamageable {
 
 
 	void FixedUpdate() {
+		if (target)
+			transform.localScale = new Vector3(
+				(target.position.x>transform.position.x)?(-1):(1),
+				transform.localScale.y,
+				transform.localScale.z);
+
 		Physics2D.OverlapCircleNonAlloc(
 			transform.position, range, results, layerMask);
 		foreach (var hit in results)
-			if (hit && hit.attachedRigidbody && hit.attachedRigidbody.tag=="Player")
-				StartCoroutine(Throwing(
-					hit.attachedRigidbody.GetComponent<PlayerMovement>().gameObject));
+			if (hit && hit.attachedRigidbody && hit.attachedRigidbody.tag=="Player") {
+				target = hit.attachedRigidbody.GetComponent<PlayerMovement>().transform;
+				StartCoroutine(Throwing(target));
+			}
 	}
 }
 

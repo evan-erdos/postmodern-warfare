@@ -8,6 +8,9 @@ public enum MessageTrigger { Default, Time, Event, Collider }
 
 public struct Message {
 
+    [YamlMember(Alias="persist")]
+    public bool Persist {get;set;}
+
 	[YamlMember(Alias="trigger")]
 	public MessageTrigger messageTrigger {get;set;}
 
@@ -27,17 +30,19 @@ public struct Message {
                     string title,
                     string description,
                     float delay,
-                    MessageTrigger messageTrigger) : this() {
+                    MessageTrigger messageTrigger,
+                    bool persist) : this() {
         this.Title = title;
         this.Description = description;
         this.Delay = delay;
         this.messageTrigger = messageTrigger;
+        this.Persist = persist;
     }
 
     public Message(string title) : this(title,"") { }
 
     public Message(string title, string description)
-        : this(title,description,0f,MessageTrigger.Default) { }
+        : this(title,description,0f,MessageTrigger.Default,false) { }
 
 
 }

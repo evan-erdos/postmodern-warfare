@@ -3,29 +3,51 @@
 
 init: !!message
   trigger: Time
-  desc: >
+  desc: >+
     Oh no, you've crashed on
     **<red>E</red><orange>A</orange><yellow>R</yellow><green>T</green><blue>H</blue>** !
+
     You need to get the pieces of your
     **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>** back together!
 
+maybe_factory: !!message
+  trigger: Event
+  desc: >+
+    Maybe your **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
+    is in the **Peeps Factory**?
+
+
+near_gun: !!message
+  trigger: Event
+  desc: >+
+    Oh! An **Earth gun**! Earthians use these to **HURT** eachother.
+
+    Press **K** or **X** to pick it up and **HURT** the **Guard**!.
+
 get_gun: !!message
   trigger: Event
-  desc: >
-    **<red>S</red><orange>P</orange><yellow>E</yellow><green>C</green><blue>T</blue><green>A</green><yellow>C</yellow><orange>U</orange><red>L</red><orange>A</orange><yellow>R</yellow>**!  You picked it up. My studies of **EARTH** have informed me that the thing you picked up is called a **GUN**.
-    It is a **WEAPON** used to **HURT THINGS**. 
-    Why don’t you give it a go? Press **K** or **X**. 
-    Try it!
+  desc: >+
+    Press **K** or **X** to use the gun!
+
+
+ #   **<red>S</red><orange>P</orange><yellow>E</yellow><green>C</green><blue>T</blue><green>A</green><yellow>C</yellow><orange>U</orange><red>L</red><orange>A</orange><yellow>R</yellow>**!  You picked it up. My studies of **EARTH** have informed me that the thing you picked up is called a **GUN**.
+ #   It is a **WEAPON** used to **HURT THINGS**. 
+ #   Why don’t you give it a go? Press **K** or **X**. 
+ #   Try it!
 
 throw_gun: !!message
   trigger: Event
-  desc: >
-    Wonderful! Now why don’t you hold on to that. 
-    My **INSTINCTS** tell me you might need it later.
-    Since you are a marshmallow, you can **STRETCH**, **SQUISH**, and **Jump**!
-    Then, you can fit into any **NOOK** or **CRANNY** you want.
-    Press the **DOWN ARROW** and the **UP ARROW** to **STRETCH** or **SQUISH** yourself.
-    Press **SPACE** to jump onto that platform over there!
+  desc: >+
+    Wondertastic! Oh! There's a 
+    **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
+    **<red>P</red><orange>A</orange><yellow>R</yellow><green>T</green>** !
+
+
+    #####My **INSTINCTS** tell me you might need it later.
+    #Since you are a marshmallow, you can **STRETCH**, **SQUISH**, and **Jump**!
+    #Then, you can fit into any **NOOK** or **CRANNY** you want.
+    #Press the **DOWN ARROW** and the **UP ARROW** to **STRETCH** or **SQUISH** yourself.
+    #Press **SPACE** to jump onto that platform over there!
 
 solve_puzzle: !!message
   trigger: Time

@@ -137,7 +137,7 @@ public static class yml {
      *    `string` to be formatted.
      **/
     public static string md(this string s) {
-        return new Buffer(Markdown.Transform(s).rainbow())
+        return new Buffer(Markdown.Transform(s)) //.rainbow()
             .Replace("<em>","<i>")
             .Replace("</em>","</i>")
             .Replace("<blockquote>","<i>")

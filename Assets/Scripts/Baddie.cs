@@ -37,7 +37,8 @@ public class Baddie : MonoBehaviour, IDamageable {
 				transform.position,
 				Quaternion.identity) as GameObject;
 			temp.transform.parent = null;
-			var inner = temp.GetComponent<Baddie>();
+			var inner = temp.GetComponent<Baddie>()
+				?? temp.GetComponentInChildren<Baddie>();
 			if (inner) inner.Immune(2f);
 			foreach (var rb in temp.GetComponentsInChildren<Rigidbody2D>())
 				rb.AddExplosionForce(4000f, transform.position,400f,200);

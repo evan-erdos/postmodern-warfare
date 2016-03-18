@@ -20,7 +20,6 @@ public class EventTriggerer2D : MonoBehaviour {
 		coll = GetComponent<Collider2D>();
 		switch (trigger) {
 		case MessageTrigger.Collider:
-			//Debug.Log ("Collider!!!");
 				if (!coll)
 					throw new System.Exception("no collider");
 				break;
@@ -37,14 +36,12 @@ public class EventTriggerer2D : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D c) {
-		Debug.Log ("Collided!");
 		if (trigger!=MessageTrigger.Collider) return;
 		if (isSingleUse && wasUsed) return;
 		m_MessageEvent.Invoke();
 	}
 
 	void OnTriggerEnter2D(Collider2D c) {
-		Debug.Log ("TRiggered!");
 		if (c.tag != "Player")
 			return;
 		if (trigger!=MessageTrigger.Collider) return;
@@ -52,6 +49,5 @@ public class EventTriggerer2D : MonoBehaviour {
 		m_MessageEvent.Invoke();
 	}
 
-	public void OnEvent() { wasUsed = true; }//print("something happened!"); }
+	public void OnEvent() { wasUsed = true; }
 }
-	

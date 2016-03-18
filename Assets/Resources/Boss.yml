@@ -6,19 +6,12 @@ init: !!message
   trigger: Event
   next: pre-boss
   desc: >
-    This is the start of the end of your life, Mallowdog.
-
-pre-boss: !!message
-  delay: 20
-  desc: >
-    Lo, but for there is yet hope, Mallowdog!
-    The ancients claim that it takes but one hit,
-    and the great chocolate demon god of thunder will be subdued.
+    "Do you expect me to bark?"
 
 boss: !!message
   delay: 4
   trigger: Time
   desc: >
-    yeah, so, but like maybe they were wrong about that whole thing
+    No, Mr. Mallowdog. I expect you to **<red>D</red><orange>I</orange><yellow>E</yellow>** !
 
 ...

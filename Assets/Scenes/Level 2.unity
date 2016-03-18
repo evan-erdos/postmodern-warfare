@@ -2965,7 +2965,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 149942, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ce890e88768346bab3350b464589676, type: 2}
@@ -5191,7 +5191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &192863447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9318,7 +9318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &374503481
 AudioListener:
   m_ObjectHideFlags: 0
@@ -28672,7 +28672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1262137620
 SpriteRenderer:
   m_ObjectHideFlags: 0

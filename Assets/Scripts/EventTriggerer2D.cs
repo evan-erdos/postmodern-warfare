@@ -42,8 +42,7 @@ public class EventTriggerer2D : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D c) {
-		if (c.tag != "Player")
-			return;
+		if (c.tag != "Player") return;
 		if (trigger!=MessageTrigger.Collider) return;
 		if (isSingleUse && wasUsed) return;
 		m_MessageEvent.Invoke();

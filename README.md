@@ -9,8 +9,17 @@ Developed by Succulent Studios.
 [mit]: <http://img.shields.io/:license-MIT-blue.svg>
 [license]: <http://bescott.mit-license.org>
 [v]: <https://img.shields.io/badge/version-0.2.2-blue.svg>
-[tag]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/0.2.2>
+[tag]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/0.2.2-beta>
 
+## What People are Saying ##
+
+> "I have never seen a more convincing front for an online drug marketplace... 4/5"
+
+*The Princeton Reviewer*
+
+> "I actually had a really bad experience with this game"
+
+*Chicago Sun Times*
 
 
 ## Instructions ##

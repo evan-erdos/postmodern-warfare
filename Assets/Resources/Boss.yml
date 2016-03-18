@@ -8,6 +8,14 @@ init: !!message
   desc: >
     "Do you expect me to bark?"
 
+
+init-boss: !!message
+  delay: 4
+  trigger: Event
+  next: pre-boss
+  desc: >
+    "Do you expect me to bark?"
+
 boss: !!message
   delay: 4
   trigger: Time

@@ -29,15 +29,37 @@ public static class yml {
      * loading / instantiation process.
      **/
     static yml() {
+        var pre = "tag:yaml.org,2002:";
+        // mapping of all the tags to their types
+        var tags = new Dictionary<string,Type> {
+            { "regex", typeof(Regex) },
+            { "date", typeof(DateTime) },
+            { "message", typeof(Message) }};
+
+        foreach (var tag in tags)
+            deserializer.RegisterTagMapping(
+                pre+tag.Key, tag.Value);
+    }
+
+
+
+
+
+
+
+#if DUMB
         string  pre = "tag:yaml.org,2002:",
                 ext = ".yml",
                 dir =
-#if UNITY_EDITOR
+#
+if UNITY_EDITOR
                     Directory.GetCurrentDirectory()
                         +"/Assets/Resources/";
-#else
+#
+else
                     Application.dataPath+"/Resources/";
-#endif
+#
+endif
 
         // mapping of all the tags to their types
         var tags = new Dictionary<string,Type> {
@@ -58,6 +80,7 @@ public static class yml {
                                 GetReader(Path.Combine(dir,file)+ext)))
                 messages[kvp.Key] = kvp.Value;
     }
+#endif
 
 
     /** `GetReader()` : **`StringReader`**
@@ -78,6 +101,28 @@ public static class yml {
         return new StringReader(buffer.ToString());
     }
 
+
+
+    public static void init() {
+        messages = new Dictionary<string,Message>();
+        var ext = ".yml";
+        var dir =
+#if UNITY_EDITOR
+                    Directory.GetCurrentDirectory()
+                        +"/Assets/Resources/";
+#else
+                    Application.dataPath+"/Resources/";
+#endif
+
+        var currentFile = SceneManager.GetActiveScene().name;
+
+        var files = new[] { "messages", currentFile };
+
+        foreach (var file in files)
+            foreach (var kvp in deserializer.Deserialize<Dictionary<string,Message>>(
+                                GetReader(Path.Combine(dir,file)+ext)))
+                messages[kvp.Key] = kvp.Value;
+    }
 
 
 

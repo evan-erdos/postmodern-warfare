@@ -14,6 +14,7 @@ public class Narration : MonoBehaviour {
 
 
 	void Awake() {
+		yml.init();
 		text = GetComponent<ui::Text>()
 			?? GetComponentInChildren<ui::Text>();
 		if (!text)

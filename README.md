@@ -8,8 +8,8 @@ Developed by Succulent Studios.
 ---
 [mit]: <http://img.shields.io/:license-MIT-blue.svg>
 [license]: <http://bescott.mit-license.org>
-[v]: <https://img.shields.io/badge/version-0.2.2-blue.svg>
-[tag]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/0.2.2-beta>
+[v]: <https://img.shields.io/badge/version-0.2.3-blue.svg>
+[tag]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/0.2.3>
 
 ## What People are Saying ##
 
@@ -38,6 +38,12 @@ The latest build of this game for your platform can be found [here][tag].
 
 
 ## Changelog ##
+
+### Version 0.2.3 ###
+
+- Simple leg inventory
+
+- other small fixes
 
 
 ### Version 0.2.2 ###

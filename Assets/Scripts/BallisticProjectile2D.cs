@@ -21,11 +21,14 @@ public class BallisticProjectile2D : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D(Collision2D c) {
-		if (wait) return;
 		if (c.rigidbody) {
 			var player = c.rigidbody.GetComponent<PlayerMovement>();
-			if (player) player.Apply(Damage);
+			if (player) {
+				player.Apply(Damage);
+				wait = false;
+			}
 		}
+		if (wait) return;
 		var temp = Object.Instantiate(explosion,transform.position,Quaternion.identity) as GameObject;
 		foreach (var rb in temp.GetComponentsInChildren<Rigidbody2D>())
 				rb.AddExplosionForce(4000f, transform.position,400f,200);

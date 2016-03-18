@@ -1,0 +1,24 @@
+%YAML 1.1
+---
+
+init: !!message
+  delay: 4
+  trigger: Event
+  next: pre-boss
+  desc: >
+    This is the start of the end of your life, Mallowdog.
+
+pre-boss: !!message
+  delay: 20
+  desc: >
+    Lo, but for there is yet hope, Mallowdog!
+    The ancients claim that it takes but one hit,
+    and the great chocolate demon god of thunder will be subdued.
+
+boss: !!message
+  delay: 4
+  trigger: Time
+  desc: >
+    yeah, so, but like maybe they were wrong about that whole thing
+
+...

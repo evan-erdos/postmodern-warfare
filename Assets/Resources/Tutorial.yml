@@ -1,6 +1,7 @@
 %YAML 1.1
 ---
 
+
 init: !!message
   speaker: Commander
   trigger: Time
@@ -11,6 +12,7 @@ init: !!message
     
     You need to get the pieces of your
     **<rainbow>SHIP</rainbow>** back together!
+
 
 maybe_factory: !!message
   speaker: MallowDog
@@ -30,12 +32,14 @@ near_gun: !!message
     
     Press **K** or **X** to pick it up and **HURT** the **Guard**!.
 
+
 get_gun: !!message
   speaker: Commander
   delay: 4
   trigger: Event
   desc: >
     Press **K** or **X** to use the gun!
+
 
 control_panel: !!message
   speaker: Commander
@@ -58,8 +62,7 @@ control_panel: !!message
 #   trigger: Event
 #   desc: >+
 #     Wondertastic! Oh! There's a 
-#     **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
-#     **<red>P</red><orange>A</orange><yellow>R</yellow><green>T</green>** !
+#     **<rainbow>SHIP PART</rainbow>** !
 
 
 

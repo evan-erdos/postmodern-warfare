@@ -39,7 +39,7 @@ class Gun2D : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		transform.localScale = new Vector3(scale,scale,scale);
+		//transform.localScale = new Vector3(scale,scale,scale);
 		if (IsHeld) transform.localPosition = Vector3.zero;
 	}
 

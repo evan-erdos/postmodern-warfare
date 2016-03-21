@@ -13,7 +13,7 @@ GameObject:
   - 50: {fileID: 5030636}
   - 114: {fileID: 11446782}
   m_Layer: 0
-  m_Name: Guard
+  m_Name: PikcupGuard
   m_TagString: Baddie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ MonoBehaviour:
   range: 16
   delay: 2
   force: 2
-  deadReplacement: {fileID: 198256, guid: 9721fef70cc4d44eeaa9d171800c3f99, type: 2}
+  deadReplacement: {fileID: 198256, guid: e4c64a86131f64fae851f72822da921e, type: 2}
   projectile: {fileID: 0}
   explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
   m_killEvent:
@@ -131,7 +131,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: deadReplacement
+      value: 
+      objectReference: {fileID: 198256, guid: e4c64a86131f64fae851f72822da921e, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 108262}

@@ -12076,6 +12076,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11483008, guid: 9ce890e88768346bab3350b464589676, type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 818562114}
     - target: {fileID: 22443946, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -12084,13 +12088,13 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 11483008, guid: 9ce890e88768346bab3350b464589676, type: 2}
-      propertyPath: player
+    - target: {fileID: 11423222, guid: 9ce890e88768346bab3350b464589676, type: 2}
+      propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 818562114}
-    - target: {fileID: 11406160, guid: 9ce890e88768346bab3350b464589676, type: 2}
-      propertyPath: frame
-      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 11423222, guid: 9ce890e88768346bab3350b464589676, type: 2}
+      propertyPath: m_Color.a
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ce890e88768346bab3350b464589676, type: 2}

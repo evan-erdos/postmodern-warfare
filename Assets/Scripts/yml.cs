@@ -182,7 +182,7 @@ endif
      *    `string` to be formatted.
      **/
     public static string md(this string s) {
-        return new Buffer(Markdown.Transform(s)) //.rainbow()
+        return new Buffer(Markdown.Transform(s).rainbow())
             .Replace("<em>","<i>")
             .Replace("</em>","</i>")
             .Replace("<blockquote>","<i>")
@@ -229,7 +229,7 @@ endif
     public static string rainbow(this string s) {
         var buffer = new Buffer();
         var tag = new Regex(@"<rainbow>");
-        var end = "</rainbow>";
+        var end = new Regex(@"</rainbow>");
         var i = 0;
         var color = "</color>";
         var colors = new string[] {
@@ -241,18 +241,18 @@ endif
             "<color=#b695ea>",
             "<color=#d495ea>"};
         var list = tag.Split(s);
-        foreach (string line in list) {
-            Debug.Log(line);
-            if (line.EndsWith(end))
-                Debug.Log("asdv");
-
-        }
-
-        foreach (char letter in s) {
-            buffer.Append(colors[i%colors.Length]);
-            buffer.Append(letter);
-            buffer.Append(color);
-            i++;
+        foreach (var line in list) {
+            if (end.IsMatch(line)) {
+                var phrases = end.Split(line);
+                var rest = phrases[1];
+                foreach (char l in phrases[0]) {
+                    buffer.Append(colors[i%colors.Length]);
+                    buffer.Append(l);
+                    buffer.Append(color);
+                    i++;
+                }
+                buffer.Append(rest);
+            } else buffer.Append(line);
         } return buffer.ToString();
     }
 

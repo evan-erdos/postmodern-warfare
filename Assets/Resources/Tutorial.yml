@@ -7,17 +7,17 @@ init: !!message
   persist: true
   desc: >
     Oh no, you've crashed on
-    **<red>E</red><orange>A</orange><yellow>R</yellow><green>T</green><blue>H</blue>** !
+    **<rainbow>EARTH</rainbow>** !
     
     You need to get the pieces of your
-    **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>** back together!
+    **<rainbow>SHIP</rainbow>** back together!
 
 maybe_factory: !!message
   speaker: MallowDog
   delay: 4
   trigger: Event
   desc: >
-    Maybe your **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
+    Maybe your **<rainbow>SHIP</rainbow>**
     is in the **Peeps Factory**?
 
 
@@ -26,7 +26,7 @@ near_gun: !!message
   delay: 4
   trigger: Event
   desc: >
-    Oh! An **Earth gun**! Earthians use these to **HURT** eachother.
+    Oh! An **Earth gun**! Earthians use these to **<rainbow>HURT</rainbow>** eachother.
     
     Press **K** or **X** to pick it up and **HURT** the **Guard**!.
 
@@ -44,11 +44,11 @@ control_panel: !!message
   desc: >
     A locked door? Maybe try hacking the **CONTROL PANEL**.
     
-    ... with your **<red>G</red><orange>U</orange><yellow>N</yellow>**
+    ... with your **<rainbow>GUN</rainbow>**
 
 
 
- #   **<red>S</red><orange>P</orange><yellow>E</yellow><green>C</green><blue>T</blue><green>A</green><yellow>C</yellow><orange>U</orange><red>L</red><orange>A</orange><yellow>R</yellow>**!  You picked it up. My studies of **EARTH** have informed me that the thing you picked up is called a **GUN**.
+ #   **<rainbow>SPECTACULAR</rainbow>**!  You picked it up. My studies of **EARTH** have informed me that the thing you picked up is called a **GUN**.
  #   It is a **WEAPON** used to **HURT THINGS**. 
  #   Why don’t you give it a go? Press **K** or **X**. 
  #   Try it!
@@ -77,7 +77,7 @@ solve_puzzle: !!message
   trigger: Time
   desc: >
     Amazing! Now just use your natural Mallow powers to 
-    **<red>S</red><orange>Q</orange><yellow>U</yellow><green>I</green><blue>S</blue><red>H</red>**
+    **<rainbow>SQUISH</rainbow>**
     through that vent (Hold **L**)
 
 
@@ -86,17 +86,16 @@ kill_guard: !!message
   trigger: Event
   desc: >
     Wondertastic! Oh! There's a 
-    **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
-    **<red>P</red><orange>A</orange><yellow>R</yellow><green>T</green>** !
+    **<rainbow>SHIP PART</rainbow>** !
 
 
 stretch_tut: !!message
   speaker: Commander
   delay: 8
   trigger: Event
-  desc: >
+  desc: |
     Now, obviously, 
-    **<red>S</red><orange>T</orange><yellow>R</yellow><green>E</green><blue>T</blue><red>C</red><orange>H</orange>**
+    **<rainbow>STRETCH</rainbow>**
     (Hold **J**)
 
 

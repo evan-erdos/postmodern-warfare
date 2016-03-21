@@ -6,7 +6,9 @@ using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
-class Item2D : MonoBehaviour {
+public class Item2D : MonoBehaviour {
+
+	public bool isSingleUse;
 
 	public UnityEvent m_TakeEvent;
 	public UnityEvent m_DropEvent;
@@ -27,12 +29,16 @@ class Item2D : MonoBehaviour {
 		if (other.tag=="Player") Take();
 	}
 
-	void OnTake() { }
+	void OnTake() {
+		if (isSingleUse) Destroy(gameObject);
+	}
+
 	void OnDrop() { }
 
 
-	public void Take() { m_TakeEvent.Invoke(); }
-	public void Drop() { m_TakeEvent.Invoke(); }
+	void Take() { m_TakeEvent.Invoke(); }
+
+	void Drop() { m_TakeEvent.Invoke(); }
 }
 
 

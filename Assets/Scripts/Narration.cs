@@ -9,9 +9,16 @@ public class Narration : MonoBehaviour {
 
 	float alpha = 1f;
 	ui::Text text;
+	ui::Image image;
 	CanvasGroup group;
 	public Message message;
 
+	public Sprite frame;
+	public Sprite mallowDog;
+	public Sprite commander;
+	public Sprite chocolate;
+
+	Dictionary<Speaker,Sprite> speakers;
 
 	void Awake() {
 		yml.init();
@@ -19,16 +26,31 @@ public class Narration : MonoBehaviour {
 			?? GetComponentInChildren<ui::Text>();
 		if (!text)
 			throw new System.Exception("No Narration Text");
+		foreach (var image in GetComponentsInChildren<ui::Image>())
+			if (image.name=="Image")
+				this.image = image;
+		if (!this.image)
+			throw new System.Exception("No Narration Image");
 		group = GetComponent<CanvasGroup>()
 			?? GetComponentInChildren<CanvasGroup>();
 		if (!group)
 			throw new System.Exception("No Canvas Group");
+
+		speakers = new Dictionary<Speaker,Sprite>() {
+			{Speaker.Default,   frame},
+			{Speaker.MallowDog, mallowDog},
+			{Speaker.Commander, commander},
+			{Speaker.Chocolate, chocolate}};
+
 		DisplayMessage(initMessageName);
 	}
 
 
 	IEnumerator DisplayingMessage(Message message) {
 		text.text = message.Description.md();
+		image.sprite = speakers[message.speaker];
+		image.color = new Color(1,1,1,
+			(image.sprite==null)?0:1);
 		while (alpha<1f) {
 			alpha += 0.1f;
 			group.alpha = alpha;

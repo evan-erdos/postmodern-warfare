@@ -2,9 +2,10 @@
 ---
 
 init: !!message
+  speaker: Commander
   trigger: Time
   persist: true
-  desc: >+
+  desc: >
     Oh no, you've crashed on
     **<red>E</red><orange>A</orange><yellow>R</yellow><green>T</green><blue>H</blue>** !
     
@@ -12,37 +13,39 @@ init: !!message
     **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>** back together!
 
 maybe_factory: !!message
+  speaker: MallowDog
   delay: 4
   trigger: Event
-  desc: >+
+  desc: >
     Maybe your **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
     is in the **Peeps Factory**?
 
 
 near_gun: !!message
+  speaker: Commander
   delay: 4
   trigger: Event
-  desc: >+
+  desc: >
     Oh! An **Earth gun**! Earthians use these to **HURT** eachother.
     
     Press **K** or **X** to pick it up and **HURT** the **Guard**!.
 
 get_gun: !!message
+  speaker: Commander
   delay: 4
   trigger: Event
-  desc: >+
+  desc: >
     Press **K** or **X** to use the gun!
 
 control_panel: !!message
+  speaker: Commander
   trigger: Event
   persist: true
-  desc: >+
+  desc: >
     A locked door? Maybe try hacking the **CONTROL PANEL**.
-
-
-
-
+    
     ... with your **<red>G</red><orange>U</orange><yellow>N</yellow>**
+
 
 
  #   **<red>S</red><orange>P</orange><yellow>E</yellow><green>C</green><blue>T</blue><green>A</green><yellow>C</yellow><orange>U</orange><red>L</red><orange>A</orange><yellow>R</yellow>**!  You picked it up. My studies of **EARTH** have informed me that the thing you picked up is called a **GUN**.
@@ -65,15 +68,18 @@ control_panel: !!message
 #Then, you can fit into any **NOOK** or **CRANNY** you want.
 #Press the **DOWN ARROW** and the **UP ARROW** to **STRETCH** or **SQUISH** yourself.
 #Press **SPACE** to jump onto that platform over there!
-#
+
+
 
 solve_puzzle: !!message
+  speaker: Commander
   delay: 4
   trigger: Time
-  desc: >+
+  desc: >
     Amazing! Now just use your natural Mallow powers to 
     **<red>S</red><orange>Q</orange><yellow>U</yellow><green>I</green><blue>S</blue><red>H</red>**
     through that vent (Hold **L**)
+
 
 kill_guard: !!message
   delay: 4
@@ -83,7 +89,9 @@ kill_guard: !!message
     **<red>S</red><orange>H</orange><yellow>I</yellow><green>P</green>**
     **<red>P</red><orange>A</orange><yellow>R</yellow><green>T</green>** !
 
+
 stretch_tut: !!message
+  speaker: Commander
   delay: 8
   trigger: Event
   desc: >
@@ -91,7 +99,9 @@ stretch_tut: !!message
     **<red>S</red><orange>T</orange><yellow>R</yellow><green>E</green><blue>T</blue><red>C</red><orange>H</orange>**
     (Hold **J**)
 
+
 goodbye: !!message
+  speaker: Commander
   delay: 4
   trigger: Event
   desc: |

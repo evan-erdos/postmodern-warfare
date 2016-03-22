@@ -94,6 +94,162 @@ woah_2: !!
   desc: >+
     <brown> no </brown>
 
+dots: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    ...
+
+fucko: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+   <brown> now listen here fucko </brown>
+
+request: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> im gonna have 2 request that u </brown>
+
+clam: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> clam tf down </brown>
+
+clamquestion: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <rainbow> Clam? </rainbow>
+
+ghostie: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> yes ghostie </brown>
+
+clam_cool: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> clam </brown>
+
+down: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> down </brown>
+
+moredots: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> ... </brown>
+
+dognghost: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> so doggie,,, and ghostie </brown>
+
+asku: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> im gonna have to ask u </brown>
+
+vacate: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> to kindly vacate the premises </brown>
+
+badstuff: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> ...or bad stuff might happen idk it's a crapshoot </brown>
+
+so: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> soooo </brown>
+
+go: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> im gonna go </brown>
+
+ideally: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> and ideally </brown>
+
+neveragain: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> ill never see u guys again </brown>
+
+bye: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    <brown> so bye </brown>
+
+question: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    That <rainbow> creature... </rainbow>
+
+defeat: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    You are going to have to defeat him in order to liberate the poor marshmallows being destroyed in this facility.
+
+listenup: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    Listen up, Mallowdog. 
+
+notyou: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    Don't believ in yourself.
+
+believe: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+  <rainbow> Believe in me! </rainbow>
+
+believeinyou: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+  <rainbow> Believe in me who believes in you! </rainbow>
+
+dotdot: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    ...
+
+earthshow: !!
+  delay: 4
+  trigger: Time
+  desc: >+
+    I learned that from an <rainbow> EARTH </rainbow> show.
+
 
 
 ...

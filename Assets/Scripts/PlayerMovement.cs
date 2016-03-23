@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour {
 	public float speed;
 	public float speedForce = 50f;
 	public float maxSpeed = 10f;
-	public float jumpForce = 150f;
+	public float jumpForce = 1500f;
 	public float maxHealth = 350f;
 	public float stretchAmount = .9f;
 	public float squishAmount = -0.65f;

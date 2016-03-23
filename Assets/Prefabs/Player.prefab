@@ -157,9 +157,9 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
+  rolloffMode: 1
+  BypassEffects: 1
+  BypassListenerEffects: 1
   BypassReverbZones: 0
   rolloffCustomCurve:
     serializedVersion: 2
@@ -253,7 +253,7 @@ MonoBehaviour:
   speedForce: 250
   maxSpeed: 10
   jumpForce: 1500
-  maxHealth: 100
+  maxHealth: 350
   stretchAmount: 0.9
   squishAmount: -0.65
   potentialGun: {fileID: 0}

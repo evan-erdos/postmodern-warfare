@@ -21,7 +21,8 @@ public class Platform2D : MonoBehaviour {
 		//foreach (var piece in pieces)
 		//	piece.SolveEvent += OnSolve;
 		if (!target)
-			throw new System.Exception("Holy shit. Please assign target");
+			throw new System.Exception(
+				"Holy shit. Please assign target");
 	}
 
 	public int OnSolve(

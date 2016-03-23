@@ -4,7 +4,7 @@ using UnityEngine.Events;
 using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
-class Button2D : MonoBehaviour, IDamageable {
+public class Button2D : MonoBehaviour, IDamageable {
 
 	public bool isOn;
 

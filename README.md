@@ -9,7 +9,7 @@ Developed by Succulent Studios.
 [mit]: <http://img.shields.io/:license-MIT-blue.svg>
 [license]: <http://bescott.mit-license.org>
 [v]: <https://img.shields.io/badge/version-0.2.3-blue.svg>
-[tag]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/0.2.3>
+[tag]: <https://github.com/evan-erdos/postmodern-warfare/releases/tag/v0.2.3>
 
 ## What People are Saying ##
 

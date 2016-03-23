@@ -16,7 +16,7 @@ public class Door2D : MonoBehaviour {
 			isOpen = value;
 			target = (isOpen)?open:init;
 		}
-	} bool isOpen;
+	} public bool isOpen;
 
 	void Awake() {
 		foreach(Transform child in transform)
@@ -35,6 +35,8 @@ public class Door2D : MonoBehaviour {
             delay, Time.deltaTime);
 	}
 
+
+	public void Toggle() { IsOpen = !IsOpen; }
 	public void Open() { IsOpen = true; }
 	public void Shut() { IsOpen = false; }
 

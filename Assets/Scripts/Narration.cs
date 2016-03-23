@@ -46,6 +46,13 @@ public class Narration : MonoBehaviour {
 	}
 
 
+	void Update() {
+		if (Input.GetButtonDown("Submit"))
+			DisplayMessage(message.Next);
+	}
+
+
+
 	IEnumerator DisplayingMessage(Message message) {
 		text.text = message.Description.md();
 		image.sprite = speakers[message.speaker];
@@ -71,6 +78,7 @@ public class Narration : MonoBehaviour {
 		DisplayMessage(message); }
 
 	public void DisplayMessage(string name) {
+		if (name==null) return;
 		DisplayMessage(yml.messages[name]); }
 
 	public void DisplayMessage(Message message) {

@@ -16,7 +16,7 @@ public class Door2D : MonoBehaviour {
 			isOpen = value;
 			target = (isOpen)?open:init;
 		}
-	} bool isOpen;
+	} public bool isOpen;
 
 	void Awake() {
 		foreach(Transform child in transform)

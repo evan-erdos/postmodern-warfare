@@ -16,7 +16,7 @@ class Button2D : MonoBehaviour, IDamageable {
 		isOn = !isOn;
 		if (!explosion) return;
 		Object.Instantiate(explosion,transform.position,Quaternion.identity);
-		explosion = null;
+		//explosion = null;
 	}
 
 	public void Apply(float damage) {

@@ -35,6 +35,8 @@ public class Door2D : MonoBehaviour {
             delay, Time.deltaTime);
 	}
 
+
+	public void Toggle() { IsOpen = !IsOpen; }
 	public void Open() { IsOpen = true; }
 	public void Shut() { IsOpen = false; }
 

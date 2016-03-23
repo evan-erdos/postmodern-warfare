@@ -58,7 +58,7 @@ doggie: !!message
   desc: >
     <brown> r u a doggie </brown>
 
-bork_0: !!
+bork_0: !!message
   delay: 4
   trigger: Time
   title: carl
@@ -265,14 +265,16 @@ believe: !!message
   trigger: Time
   title: ???
   desc: >
-  <rainbow> Believe in me! </rainbow>
+    <rainbow> Believe in me! </rainbow>
+
 
 believeinyou: !!message
   delay: 4
   trigger: Time
   title: ???
   desc: >
-  <rainbow> Believe in me who believes in you! </rainbow>
+    <rainbow> Believe in me who believes in you! </rainbow>
+
 
 dotdot: !!message
   delay: 4

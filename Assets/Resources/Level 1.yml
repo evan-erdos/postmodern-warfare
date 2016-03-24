@@ -30,6 +30,30 @@ choco-baddie0: !!message
   desc: >
     wat r u
 
+choco-baddie1: !!message
+  delay: 4
+  trigger: Event
+  desc: >
+    r u a doggie
+
+choco-baddie2: !!message
+  delay: 4
+  trigger: Event
+  desc: >
+    bork bork
+
+choco-baddie3: !!message
+  delay: 4
+  trigger: Event
+  desc: >
+    That's him! That fiend.
+
+choco-baddie4: !!message
+  delay: 4
+  trigger: Event
+  desc: >
+    bork
+
 goodbye: !!message
   delay: 4
   trigger: Event

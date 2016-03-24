@@ -4911,11 +4911,14 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: choco-baddie1
+          m_StringArgument: choco-baddie0
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  narration: {fileID: 629622213}
+  currMsgIdx: 0
+  storyEventHappening: 0
 --- !u!61 &405226096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7762,6 +7765,10 @@ Transform:
   m_Children: []
   m_Father: {fileID: 411100078}
   m_RootOrder: 253
+--- !u!1 &629622213 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 141946, guid: 9ce890e88768346bab3350b464589676, type: 2}
+  m_PrefabInternal: {fileID: 695117598}
 --- !u!1 &643568801
 GameObject:
   m_ObjectHideFlags: 0
@@ -23152,7 +23159,7 @@ Transform:
   - {fileID: 1954020142}
   - {fileID: 108090555}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 10
 --- !u!61 &1713090564
 BoxCollider2D:
   m_ObjectHideFlags: 0

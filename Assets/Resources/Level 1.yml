@@ -46,7 +46,8 @@ narrator_4: !!message
 
 carl_0: !!message
   delay: 4
-  trigger: Event 
+  trigger: Event
+  next: carl_1 
   title: carl
   desc: >
     <brown> wat r u </brown>
@@ -54,6 +55,7 @@ carl_0: !!message
 carl_1: !!message
   delay: 4
   trigger: Time
+  next: carl_2
   title: carl
   desc: >
     <brown> r u a doggie </brown>
@@ -61,6 +63,7 @@ carl_1: !!message
 carl_2: !!message
   delay: 4
   trigger: Time
+  next: narrator_5
   title: carl
   desc: >
     <brown> bork bork </brown>
@@ -68,6 +71,7 @@ carl_2: !!message
 narrator_5: !!message
   delay: 4
   trigger: Time
+  next: carl_3
   title: ???
   desc: >
     That's him! That <rainbow> fiend! </rainbow>
@@ -75,6 +79,7 @@ narrator_5: !!message
 carl_3: !!message
   delay: 4
   trigger: Time
+  next: carl_4
   title: carl
   desc: >
     <brown> bork </brown>
@@ -82,6 +87,7 @@ carl_3: !!message
 carl_4: !!message
   delay: 4
   trigger: Time
+  next: carl_5
   title: carl
   desc: >
     <brown> doggie </brown>
@@ -89,6 +95,7 @@ carl_4: !!message
 carl_5: !!message
   delay: 4
   trigger: Event
+  next: carl_6
   title: carl
   desc: >
     <brown> woah </brown>
@@ -96,6 +103,7 @@ carl_5: !!message
 carl_6: !!message
   delay: 4
   trigger: Time
+  next: carl_7
   title: carl
   desc: >
     <brown> how about </brown>
@@ -103,6 +111,7 @@ carl_6: !!message
 carl_7: !!message
   delay: 4
   trigger: Time
+  next: carl_8
   title: carl
   desc: >
     <brown> no </brown>
@@ -110,6 +119,7 @@ carl_7: !!message
 carl_8: !!message
   delay: 4
   trigger: Time
+  next: carl_9
   title: carl
   desc: >
     ...
@@ -117,6 +127,7 @@ carl_8: !!message
 carl_9: !!message
   delay: 4
   trigger: Time
+  next: carl_10
   title: carl
   desc: >
    <brown> now listen here fucko </brown>
@@ -124,13 +135,14 @@ carl_9: !!message
 carl_10: !!message
   delay: 4
   trigger: Time
-  title: carl
+  title: carl_11
   desc: >
     <brown> im gonna have 2 request that u </brown>
 
 carl_11: !!message
   delay: 4
   trigger: Time
+  next: narrator_6
   title: carl
   desc: >
     <brown> clam tf down </brown>
@@ -138,6 +150,7 @@ carl_11: !!message
 narrator_6: !!message
   delay: 4
   trigger: Time
+  next: carl_12
   title: ???
   desc: >
     <rainbow> Clam? </rainbow>
@@ -145,6 +158,7 @@ narrator_6: !!message
 carl_12: !!message
   delay: 4
   trigger: Time
+  next: carl_13
   title: carl
   desc: >
     <brown> yes ghostie </brown>
@@ -153,12 +167,14 @@ carl_13: !!message
   delay: 4
   trigger: Time
   title: carl
+  next: carl_14
   desc: >
     <brown> clam </brown>
 
 carl_14: !!message
   delay: 4
   trigger: Time
+  next: carl_15
   title: carl
   desc: >
     <brown> down </brown>
@@ -166,6 +182,7 @@ carl_14: !!message
 carl_15: !!message
   delay: 4
   trigger: Time
+  next: carl_16
   title: carl
   desc: >
     <brown> ... </brown>
@@ -173,6 +190,7 @@ carl_15: !!message
 carl_16: !!message
   delay: 4
   trigger: Time
+  next: carl_17
   title: carl
   desc: >
     <brown> so doggie,,, and ghostie </brown>
@@ -180,6 +198,7 @@ carl_16: !!message
 carl_17: !!message
   delay: 4
   trigger: Time
+  next: carl_18
   title: carl
   desc: >
     <brown> im gonna have to ask u </brown>
@@ -187,6 +206,7 @@ carl_17: !!message
 carl_18: !!message
   delay: 4
   trigger: Time
+  next: carl_19
   title: carl
   desc: >
     <brown> to kindly vacate the premises </brown>
@@ -194,6 +214,7 @@ carl_18: !!message
 carl_19: !!message
   delay: 4
   trigger: Time
+  next: carl_20
   title: carl
   desc: >
     <brown> ...or bad stuff might happen idk it's a crapshoot </brown>
@@ -201,6 +222,7 @@ carl_19: !!message
 carl_20: !!message
   delay: 4
   trigger: Time
+  next: carl_21
   title: carl
   desc: >
     <brown> soooo </brown>
@@ -208,6 +230,7 @@ carl_20: !!message
 carl_21: !!message
   delay: 4
   trigger: Time
+  next: carl_22
   title: carl
   desc: >
     <brown> im gonna go </brown>
@@ -215,6 +238,7 @@ carl_21: !!message
 carl_22: !!message
   delay: 4
   trigger: Time
+  next: carl_23
   title: carl
   desc: >
     <brown> and ideally </brown>
@@ -222,6 +246,7 @@ carl_22: !!message
 carl_23: !!message
   delay: 4
   trigger: Time
+  next: carl_24
   title: carl
   desc: >
     <brown> ill never see u guys again </brown>
@@ -229,6 +254,7 @@ carl_23: !!message
 carl_24: !!message
   delay: 4
   trigger: Time
+  next: narrator_7
   title: carl
   desc: >
     <brown> so bye </brown>
@@ -236,12 +262,14 @@ carl_24: !!message
 narrator_7: !!message
   delay: 4
   trigger: Time
+  next: narrator_8
   desc: >
     That <rainbow> creature... </rainbow>
 
 narrator_8: !!message
   delay: 4
   trigger: Time
+  next: narrator_9
   title: ???
   desc: >
     You are going to have to defeat him in order to liberate the poor marshmallows being destroyed in this facility.
@@ -249,6 +277,7 @@ narrator_8: !!message
 narrator_9: !!message
   delay: 4
   trigger: Time
+  next: narrator_10
   title: ???
   desc: >
     Listen up, Mallowdog. 
@@ -256,6 +285,7 @@ narrator_9: !!message
 narrator_10: !!message
   delay: 4
   trigger: Time
+  next: narrator_11
   title: ???
   desc: >
     Don't believ in yourself.
@@ -263,6 +293,7 @@ narrator_10: !!message
 narrator_11: !!message
   delay: 4
   trigger: Time
+  next: narrator_12
   title: ???
   desc: >
     <rainbow> Believe in me! </rainbow>
@@ -271,6 +302,7 @@ narrator_11: !!message
 narrator_12: !!message
   delay: 4
   trigger: Time
+  next: narrator_13
   title: ???
   desc: >
     <rainbow> Believe in me who believes in you! </rainbow>
@@ -279,6 +311,7 @@ narrator_12: !!message
 narrator_13: !!message
   delay: 4
   trigger: Time
+  next: narrator_14
   title: ???
   desc: >
     ...

@@ -24,6 +24,12 @@ kill_guard: !!message
     Now you are going to have to **HURT** that **GUARD** with your **GUN**. 
     Good luck. Try not to die. 
 
+choco-baddie: !!message
+  delay: 4
+  trigger: Event
+  desc: >
+    You have come too far Mallowdog! I cannnot let you go on!
+
 goodbye: !!message
   delay: 4
   trigger: Event

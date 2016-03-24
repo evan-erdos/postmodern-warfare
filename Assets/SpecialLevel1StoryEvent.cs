@@ -2,7 +2,7 @@
 using UnityEngine.Events;
 using System.Collections;
 
-public class StoryEvent : MonoBehaviour {
+public class SpecialLevel1StoryEvent : MonoBehaviour {
 
 	public UnityEvent m_StoryEvent;
 

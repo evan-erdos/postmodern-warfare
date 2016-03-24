@@ -2,45 +2,47 @@
 ---
 
 
+
+
 init: !!message
   delay: 4
   trigger: Time
-  title: ???
+  speaker: Commander
   desc: >
     Whooooa nelly! Hold your horses there, buckaroo! Do you see this?
 
 narrator_0: !!message
   delay: 4
   trigger: Time
-  title: ???
+  speaker: Commander
   desc: >
     Marshmallows! Sent to the incinertor!
 
 narrator_1: !!message
   delay: 4
   trigger: Time
-  title: ???
+  speaker: Commander
   desc: >
     The pain in their little marshmallow eyes!
 
 narrator_2: !!message
   delay: 4
   trigger: Time
-  title: ???
+  speaker: Commander
   desc: >
     ...
 
 narrator_3: !!message
   delay: 4
   trigger: Time
-  title: ???
+  speaker: Commander
   desc: >
     You know what you have to do, Mallowdog.
 
 narrator_4: !!message
   delay: 4
   trigger: Time
-  title: ???
+  speaker: Commander
   desc: >
    <rainbow>FREE THEM!</rainbow>
 
@@ -48,31 +50,31 @@ carl_0: !!message
   delay: 4
   trigger: Event
   next: carl_1 
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> wat r u </brown>
+   wat r u 
 
 carl_1: !!message
   delay: 4
   trigger: Time
   next: carl_2
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> r u a doggie </brown>
+   r u a doggie 
 
 carl_2: !!message
   delay: 4
   trigger: Time
   next: narrator_5
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> bork bork </brown>
+   bork bork 
 
 narrator_5: !!message
   delay: 4
   trigger: Time
   next: carl_3
-  title: ???
+  speaker: Commander
   desc: >
     That's him! That <rainbow> fiend! </rainbow>
 
@@ -80,47 +82,47 @@ carl_3: !!message
   delay: 4
   trigger: Time
   next: carl_4
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> bork </brown>
+   bork 
 
 carl_4: !!message
   delay: 4
   trigger: Time
   next: carl_5
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> doggie </brown>
+   doggie 
 
 carl_5: !!message
   delay: 4
   trigger: Event
   next: carl_6
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> woah </brown>
+   woah 
 
 carl_6: !!message
   delay: 4
   trigger: Time
   next: carl_7
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> how about </brown>
+   how about 
 
 carl_7: !!message
   delay: 4
   trigger: Time
   next: carl_8
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> no </brown>
+   no 
 
 carl_8: !!message
   delay: 4
   trigger: Time
   next: carl_9
-  title: carl
+  speaker: Chocolate
   desc: >
     ...
 
@@ -128,30 +130,30 @@ carl_9: !!message
   delay: 4
   trigger: Time
   next: carl_10
-  title: carl
+  speaker: Chocolate
   desc: >
-   <brown> now listen here fucko </brown>
+   now listen here fucko 
 
 carl_10: !!message
   delay: 4
   trigger: Time
-  title: carl_11
+  speaker: Chocolate_11
   desc: >
-    <brown> im gonna have 2 request that u </brown>
+   im gonna have 2 request that u 
 
 carl_11: !!message
   delay: 4
   trigger: Time
   next: narrator_6
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> clam tf down </brown>
+   clam tf down 
 
 narrator_6: !!message
   delay: 4
   trigger: Time
   next: carl_12
-  title: ???
+  speaker: Commander
   desc: >
     <rainbow> Clam? </rainbow>
 
@@ -159,105 +161,105 @@ carl_12: !!message
   delay: 4
   trigger: Time
   next: carl_13
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> yes ghostie </brown>
+   yes ghostie 
 
 carl_13: !!message
   delay: 4
   trigger: Time
-  title: carl
+  speaker: Chocolate
   next: carl_14
   desc: >
-    <brown> clam </brown>
+   clam 
 
 carl_14: !!message
   delay: 4
   trigger: Time
   next: carl_15
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> down </brown>
+   down 
 
 carl_15: !!message
   delay: 4
   trigger: Time
   next: carl_16
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> ... </brown>
+   ... 
 
 carl_16: !!message
   delay: 4
   trigger: Time
   next: carl_17
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> so doggie,,, and ghostie </brown>
+   so doggie,,, and ghostie 
 
 carl_17: !!message
   delay: 4
   trigger: Time
   next: carl_18
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> im gonna have to ask u </brown>
+   im gonna have to ask u 
 
 carl_18: !!message
   delay: 4
   trigger: Time
   next: carl_19
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> to kindly vacate the premises </brown>
+   to kindly vacate the premises 
 
 carl_19: !!message
   delay: 4
   trigger: Time
   next: carl_20
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> ...or bad stuff might happen idk it's a crapshoot </brown>
+   ...or bad stuff might happen idk it's a crapshoot 
 
 carl_20: !!message
   delay: 4
   trigger: Time
   next: carl_21
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> soooo </brown>
+   soooo 
 
 carl_21: !!message
   delay: 4
   trigger: Time
   next: carl_22
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> im gonna go </brown>
+   im gonna go 
 
 carl_22: !!message
   delay: 4
   trigger: Time
   next: carl_23
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> and ideally </brown>
+   and ideally 
 
 carl_23: !!message
   delay: 4
   trigger: Time
   next: carl_24
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> ill never see u guys again </brown>
+   ill never see u guys again 
 
 carl_24: !!message
   delay: 4
   trigger: Time
   next: narrator_7
-  title: carl
+  speaker: Chocolate
   desc: >
-    <brown> so bye </brown>
+   so bye 
 
 narrator_7: !!message
   delay: 4
@@ -270,7 +272,7 @@ narrator_8: !!message
   delay: 4
   trigger: Time
   next: narrator_9
-  title: ???
+  speaker: Commander
   desc: >
     You are going to have to defeat him in order to liberate the poor marshmallows being destroyed in this facility.
 
@@ -278,7 +280,7 @@ narrator_9: !!message
   delay: 4
   trigger: Time
   next: narrator_10
-  title: ???
+  speaker: Commander
   desc: >
     Listen up, Mallowdog. 
 
@@ -286,7 +288,7 @@ narrator_10: !!message
   delay: 4
   trigger: Time
   next: narrator_11
-  title: ???
+  speaker: Commander
   desc: >
     Don't believ in yourself.
 
@@ -294,7 +296,7 @@ narrator_11: !!message
   delay: 4
   trigger: Time
   next: narrator_12
-  title: ???
+  speaker: Commander
   desc: >
     <rainbow> Believe in me! </rainbow>
 
@@ -303,7 +305,7 @@ narrator_12: !!message
   delay: 4
   trigger: Time
   next: narrator_13
-  title: ???
+  speaker: Commander
   desc: >
     <rainbow> Believe in me who believes in you! </rainbow>
 
@@ -312,14 +314,14 @@ narrator_13: !!message
   delay: 4
   trigger: Time
   next: narrator_14
-  title: ???
+  speaker: Commander
   desc: >
     ...
 
 narrator_14: !!message
   delay: 4
   trigger: Time
-  title: ???
+  speaker: Commander
   desc: >
     I learned that from an <rainbow> EARTH </rainbow> show.
 

@@ -4917,6 +4917,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   narration: {fileID: 629622213}
+  player: {fileID: 1713090560}
+  handgun: {fileID: 138886, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
+  gunForce: 6000
   currMsgIdx: 0
   storyEventHappening: 0
 --- !u!61 &405226096

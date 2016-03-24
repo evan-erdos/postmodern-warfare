@@ -7,6 +7,10 @@ public class StoryEvent : MonoBehaviour {
 	public UnityEvent m_StoryEvent;
 
 	public GameObject narration;
+	public GameObject player;
+	public GameObject handgun;
+
+	public float gunForce = 60000f;
 
 	public int currMsgIdx = 0;
 
@@ -38,8 +42,20 @@ public class StoryEvent : MonoBehaviour {
 		if (!storyEventHappening)
 			return;
 		if (Input.GetButtonDown ("Throw")) {
-			currMsgIdx++;
-			narration.GetComponent<Narration> ().DisplayMessage (msgNames [currMsgIdx]);
+			if (currMsgIdx == 6) {
+				GameObject gun = (GameObject) Instantiate (handgun,
+					player.transform.position, Quaternion.identity);
+				//handgun.transform = player.transform;
+				gun.tag = "Player";
+				//gun.layer = "Player";
+				gun.transform.GetComponent<Rigidbody2D> ().AddForce (transform.right * gunForce);
+			
+
+				
+			} else {
+				currMsgIdx++;
+				narration.GetComponent<Narration> ().DisplayMessage (msgNames [currMsgIdx]);
+			}
 		}
 	}
 

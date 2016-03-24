@@ -1587,6 +1587,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5019018, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
+      propertyPath: m_SleepingMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
   m_IsPrefabParent: 0
@@ -1979,7 +1983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 149942, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11406160, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: mallowDog
@@ -9263,15 +9267,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 430584, guid: ca4f5680e170640f98683ccbe3cf6a3e, type: 2}
       propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 11431534, guid: ca4f5680e170640f98683ccbe3cf6a3e, type: 2}
-      propertyPath: maxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 11431534, guid: ca4f5680e170640f98683ccbe3cf6a3e, type: 2}
-      propertyPath: stretchAmount
-      value: 0.9
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca4f5680e170640f98683ccbe3cf6a3e, type: 2}
@@ -15859,6 +15855,10 @@ Prefab:
       propertyPath: m_Name
       value: handgun (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5019018, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
+      propertyPath: m_SleepingMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
   m_IsPrefabParent: 0
@@ -21361,6 +21361,10 @@ Prefab:
       propertyPath: m_Name
       value: handgun (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5019018, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
+      propertyPath: m_SleepingMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
   m_IsPrefabParent: 0
@@ -23061,6 +23065,10 @@ Prefab:
     - target: {fileID: 138886, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
       propertyPath: m_Name
       value: handgun (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019018, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
+      propertyPath: m_SleepingMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}

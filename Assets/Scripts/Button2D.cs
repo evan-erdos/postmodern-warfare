@@ -6,6 +6,10 @@ using System.Collections;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Button2D : MonoBehaviour, IDamageable {
 
+	bool wait;
+
+	float delay = 0.5f;
+
 	public bool isOn;
 
 	public GameObject explosion;
@@ -14,10 +18,21 @@ public class Button2D : MonoBehaviour, IDamageable {
 
 	public void Click() {
 		isOn = !isOn;
-		if (!explosion) return;
-		Object.Instantiate(explosion,transform.position,Quaternion.identity);
-		//explosion = null;
+		StartCoroutine(Clicking());
 	}
+
+	IEnumerator Clicking() {
+		if (wait) yield break;
+		wait = true;
+		if (!explosion) yield break;
+		Object.Instantiate(
+			explosion,
+			transform.position,
+			Quaternion.identity);
+		yield return new WaitForSeconds(delay);
+		wait = false;
+	}
+
 
 	public void Apply(float damage) {
 		if (damage>0) m_ClickEvent.Invoke();

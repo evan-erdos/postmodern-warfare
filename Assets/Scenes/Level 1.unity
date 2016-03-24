@@ -4919,7 +4919,7 @@ MonoBehaviour:
   narration: {fileID: 629622213}
   player: {fileID: 1713090560}
   handgun: {fileID: 138886, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
-  gunForce: 6000
+  gunForce: 8000
   currMsgIdx: 0
   storyEventHappening: 0
 --- !u!61 &405226096
@@ -8608,6 +8608,14 @@ Prefab:
     - target: {fileID: 485444, guid: a31ae2fe7139d4edf98f497466034ba0, type: 2}
       propertyPath: m_LocalScale.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11477810, guid: a31ae2fe7139d4edf98f497466034ba0, type: 2}
+      propertyPath: immune
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5013600, guid: a31ae2fe7139d4edf98f497466034ba0, type: 2}
+      propertyPath: m_Constraints
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a31ae2fe7139d4edf98f497466034ba0, type: 2}

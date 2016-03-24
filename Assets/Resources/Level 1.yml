@@ -1,88 +1,295 @@
 %YAML 1.1
 ---
 
+
 init: !!message
   delay: 4
   trigger: Time
+  title: ???
   desc: >
-    This is the start of Level 1!
+    Whooooa nelly! Hold your horses there, buckaroo! Do you see this?
 
-solve_puzzle: !!message
+narrator_0: !!message
+  delay: 4
+  trigger: Time
+  title: ???
+  desc: >
+    Marshmallows! Sent to the incinertor!
+
+narrator_1: !!message
+  delay: 4
+  trigger: Time
+  title: ???
+  desc: >
+    The pain in their little marshmallow eyes!
+
+narrator_2: !!message
+  delay: 4
+  trigger: Time
+  title: ???
+  desc: >
+    ...
+
+narrator_3: !!message
+  delay: 4
+  trigger: Time
+  title: ???
+  desc: >
+    You know what you have to do, Mallowdog.
+
+narrator_4: !!message
+  delay: 4
+  trigger: Time
+  title: ???
+  desc: >
+   <rainbow>FREE THEM!</rainbow>
+
+carl_0: !!message
+  delay: 4
+  trigger: Event 
+  title: carl
+  desc: >
+    <brown> wat r u </brown>
+
+carl_1: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> r u a doggie </brown>
+
+carl_2: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> bork bork </brown>
+
+narrator_5: !!message
+  delay: 4
+  trigger: Time
+  title: ???
+  desc: >
+    That's him! That <rainbow> fiend! </rainbow>
+
+carl_3: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> bork </brown>
+
+carl_4: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> doggie </brown>
+
+carl_5: !!message
+  delay: 4
+  trigger: Event
+  title: carl
+  desc: >
+    <brown> woah </brown>
+
+carl_6: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> how about </brown>
+
+carl_7: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> no </brown>
+
+carl_8: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    ...
+
+carl_9: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+   <brown> now listen here fucko </brown>
+
+carl_10: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> im gonna have 2 request that u </brown>
+
+carl_11: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> clam tf down </brown>
+
+narrator_6: !!message
+  delay: 4
+  trigger: Time
+  title: ???
+  desc: >
+    <rainbow> Clam? </rainbow>
+
+carl_12: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> yes ghostie </brown>
+
+carl_13: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> clam </brown>
+
+carl_14: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> down </brown>
+
+carl_15: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> ... </brown>
+
+carl_16: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> so doggie,,, and ghostie </brown>
+
+carl_17: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> im gonna have to ask u </brown>
+
+carl_18: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> to kindly vacate the premises </brown>
+
+carl_19: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> ...or bad stuff might happen idk it's a crapshoot </brown>
+
+carl_20: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> soooo </brown>
+
+carl_21: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> im gonna go </brown>
+
+carl_22: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> and ideally </brown>
+
+carl_23: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> ill never see u guys again </brown>
+
+carl_24: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  desc: >
+    <brown> so bye </brown>
+
+narrator_7: !!message
   delay: 4
   trigger: Time
   desc: >
-    Amazing!
-    The creatures who live on this planet also have an **ODD PROPENSITY** to **PUZZLES**. 
-    These **PUZZLES** are **ANNOYING** and I **DISLIKE** them. 
-    You will have to **SOLVE** them **SOMETIMES**. Solve this one!
+    That <rainbow> creature... </rainbow>
 
-kill_guard: !!message
+narrator_8: !!message
   delay: 4
-  trigger: Event
+  trigger: Time
+  title: ???
   desc: >
-    ...Radical! That is another **EARTH EXPRESSION**. OK.
-    Now you are going to have to **HURT** that **GUARD** with your **GUN**. 
-    Good luck. Try not to die. 
+    You are going to have to defeat him in order to liberate the poor marshmallows being destroyed in this facility.
 
-choco-baddie0: !!message
-  speaker: Chocolate
+narrator_9: !!message
   delay: 4
-  trigger: Event
+  trigger: Time
+  title: ???
   desc: >
-    wat r u
+    Listen up, Mallowdog. 
 
-choco-baddie1: !!message
-  speaker: Chocolate
+narrator_10: !!message
   delay: 4
-  trigger: Event
+  trigger: Time
+  title: ???
   desc: >
-    r u a doggie
+    Don't believ in yourself.
 
-choco-baddie2: !!message
-  speaker: Chocolate
+narrator_11: !!message
   delay: 4
-  trigger: Event
+  trigger: Time
+  title: ???
   desc: >
-    bork bork
+    <rainbow> Believe in me! </rainbow>
 
-choco-baddie3: !!message
-  speaker: Commander
+
+narrator_12: !!message
   delay: 4
-  trigger: Event
+  trigger: Time
+  title: ???
   desc: >
-    That's him! That fiend.
+    <rainbow> Believe in me who believes in you! </rainbow>
 
-choco-baddie4: !!message
-  speaker: Chocolate
+
+narrator_13: !!message
   delay: 4
-  trigger: Event
+  trigger: Time
+  title: ???
   desc: >
-    bork
+    ...
 
-choco-baddie5: !!message
+narrator_14: !!message
   delay: 4
-  trigger: Event
+  trigger: Time
+  title: ???
   desc: >
-    bork bork
+    I learned that from an <rainbow> EARTH </rainbow> show.
 
-choco-baddie6: !!message
-  delay: 4
-  trigger: Event
-  desc: >
-    That's him! That fiend.
 
-choco-baddie7: !!message
-  delay: 4
-  trigger: Event
-  desc: >
-    bork
-
-goodbye: !!message
-  delay: 4
-  trigger: Event
-  desc: |
-    ...**NAILED IT**! 
-    **GOOD**. Now I am going to **LEAVE YOU TO YOUR BUSINESS**. 
-    Please jump down that tube.
 
 ...

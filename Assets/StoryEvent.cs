@@ -16,7 +16,11 @@ public class StoryEvent : MonoBehaviour {
 		"choco-baddie1",
 		"choco-baddie2",
 		"choco-baddie3",
-		"choco-baddie4"
+		"choco-baddie4",
+		"choco-baddie5",
+		"choco-baddie6",
+		"choco-baddie7",
+		"choco-baddie8"
 	};
 
 

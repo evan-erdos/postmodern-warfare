@@ -25,30 +25,53 @@ kill_guard: !!message
     Good luck. Try not to die. 
 
 choco-baddie0: !!message
+  speaker: Chocolate
   delay: 4
   trigger: Event
   desc: >
     wat r u
 
 choco-baddie1: !!message
+  speaker: Chocolate
   delay: 4
   trigger: Event
   desc: >
     r u a doggie
 
 choco-baddie2: !!message
+  speaker: Chocolate
   delay: 4
   trigger: Event
   desc: >
     bork bork
 
 choco-baddie3: !!message
+  speaker: Commander
   delay: 4
   trigger: Event
   desc: >
     That's him! That fiend.
 
 choco-baddie4: !!message
+  speaker: Chocolate
+  delay: 4
+  trigger: Event
+  desc: >
+    bork
+
+choco-baddie5: !!message
+  delay: 4
+  trigger: Event
+  desc: >
+    bork bork
+
+choco-baddie6: !!message
+  delay: 4
+  trigger: Event
+  desc: >
+    That's him! That fiend.
+
+choco-baddie7: !!message
   delay: 4
   trigger: Event
   desc: >

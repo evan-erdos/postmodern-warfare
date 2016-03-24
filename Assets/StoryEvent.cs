@@ -45,13 +45,9 @@ public class StoryEvent : MonoBehaviour {
 			if (currMsgIdx == 6) {
 				GameObject gun = (GameObject) Instantiate (handgun,
 					player.transform.position, Quaternion.identity);
-				//handgun.transform = player.transform;
-				gun.tag = "Player";
-				//gun.layer = "Player";
+	
 				gun.transform.GetComponent<Rigidbody2D> ().AddForce (transform.right * gunForce);
 			
-
-				
 			} else {
 				currMsgIdx++;
 				narration.GetComponent<Narration> ().DisplayMessage (msgNames [currMsgIdx]);

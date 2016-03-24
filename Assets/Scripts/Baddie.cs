@@ -8,7 +8,7 @@ using System.Collections;
 public class Baddie : MonoBehaviour, IDamageable {
 
 	bool wait;
-	bool immune;
+	public bool immune;
 	public float range = 8f;
 	public float delay = 2f;
 	public float force = 2f;

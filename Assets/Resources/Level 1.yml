@@ -28,7 +28,7 @@ choco-baddie0: !!message
   delay: 4
   trigger: Event
   desc: >
-    Whooooa nelly! Hold your horses there, bucko. Do you see this?!
+    wat r u
 
 goodbye: !!message
   delay: 4

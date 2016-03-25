@@ -7,7 +7,7 @@ init: !!message
   trigger: Time
   speaker: Chocolate
   next: carl_0
-  desc: >+
+  desc: >
     r u serious
 
 carl_0: !!message
@@ -15,16 +15,16 @@ carl_0: !!message
   trigger: Time
   next: carl_1
   speaker: Chocolate
-  desc: >+
+  desc: >
     did u rly
 
 carl_1: !!message
   delay: 4
-  trigger:Time
+  trigger: Time
   next: carl_2
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     not leave
 
 carl_2: !!message
@@ -33,7 +33,7 @@ carl_2: !!message
   next: carl_3
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     do u speak american 
 
 carl_3: !!message
@@ -42,7 +42,7 @@ carl_3: !!message
   next: carl_4
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     u violent lil shit
 
 carl_4: !!message
@@ -51,7 +51,7 @@ carl_4: !!message
   next: carl_5
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     im just gonna tell u
 
 carl_5: !!message
@@ -60,7 +60,7 @@ carl_5: !!message
   next: carl_6
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     ur gonna have a bad time 
 
 carl_6: !!message
@@ -69,7 +69,7 @@ carl_6: !!message
   next: carl_7
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     u better have some tricks up ur marshmallowy ass
 
 carl_7: !!message
@@ -78,7 +78,7 @@ carl_7: !!message
   next: carl_8
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     because i sure do
 
 carl_8: !!message
@@ -87,7 +87,7 @@ carl_8: !!message
   next: carl_9
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     ...
 
 carl_9: !!message
@@ -96,7 +96,7 @@ carl_9: !!message
   next: carl_10
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     have something up my ass
 
 carl_10: !!message
@@ -105,7 +105,7 @@ carl_10: !!message
   next: carl_11
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     ...
 
 carl_11: !!message
@@ -114,7 +114,7 @@ carl_11: !!message
   next: carl_12
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     anyway
 
 carl_12: !!message
@@ -123,7 +123,7 @@ carl_12: !!message
   next: carl_13
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     probably ...
 
 carl_13: !!message
@@ -132,7 +132,7 @@ carl_13: !!message
   next: carl_14
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     fuck away
 
 carl_14: !!message
@@ -140,7 +140,7 @@ carl_14: !!message
   trigger: Time
   title: carl
   speaker: Chocolate
-  desc: >+
+  desc: >
     nowish.
 
 

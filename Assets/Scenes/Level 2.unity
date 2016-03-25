@@ -2070,27 +2070,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 24.1875
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 48.375
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 160794, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_IsActive
@@ -2098,27 +2098,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22463528, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22463528, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22463528, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 88.5625
       objectReference: {fileID: 0}
     - target: {fileID: 22463528, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 22463528, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 48.375
       objectReference: {fileID: 0}
     - target: {fileID: 22463528, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9ce890e88768346bab3350b464589676, type: 2}
@@ -2127,6 +2127,12 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 141946, guid: 9ce890e88768346bab3350b464589676, type: 2}
   m_PrefabInternal: {fileID: 108847922}
+--- !u!114 &108847925 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11406160, guid: 9ce890e88768346bab3350b464589676,
+    type: 2}
+  m_PrefabInternal: {fileID: 108847922}
+  m_Script: {fileID: 11500000, guid: 87fa2f54c43f24ff1bce2f94a581855f, type: 3}
 --- !u!1 &110312313
 GameObject:
   m_ObjectHideFlags: 0
@@ -12935,7 +12941,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 630795723}
   - 61: {fileID: 630795722}
-  - 114: {fileID: 630795721}
   - 114: {fileID: 630795724}
   m_Layer: 0
   m_Name: StoryEventTrigger
@@ -12944,44 +12949,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &630795721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 630795720}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53f2b0574dbc640f2ba54e3d2e886ab0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_StoryEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: DisplayMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: carl_0
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  narration: {fileID: 108847923}
-  player: {fileID: 447544655}
-  baddie: {fileID: 1515948945}
-  handgun: {fileID: 138886, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
-  flyTarget: {fileID: 545561717}
-  gunForce: 8000
-  flySpeed: 600
-  flyDelay: 10
-  currMsgIdx: 0
-  storyEventHappening: 0
-  flyingAway: 0
 --- !u!61 &630795722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13020,6 +12987,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c34e2cc9493e14983b9eaf51f1a4c824, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_StoryEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 108847925}
+        m_MethodName: DisplayMessage
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: carl_0
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  narration: {fileID: 108847923}
+  player: {fileID: 447544655}
+  baddie: {fileID: 1515948945}
+  handgun: {fileID: 0}
+  flyTarget: {fileID: 1389257564}
+  gunForce: 60000
+  flySpeed: 600
+  flyDelay: 10
+  currMsgIdx: 0
+  storyEventHappening: 0
+  flyingAway: 0
 --- !u!1 &642228837
 GameObject:
   m_ObjectHideFlags: 0
@@ -19709,7 +19703,7 @@ Transform:
   m_LocalScale: {x: 7.6049967, y: 7.6049957, z: 0.50699973}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 41
+  m_RootOrder: 38
 --- !u!1001 &1004903294
 Prefab:
   m_ObjectHideFlags: 0
@@ -28710,7 +28704,7 @@ Transform:
   m_LocalScale: {x: 15, y: 15, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 68
+  m_RootOrder: 69
 --- !u!1 &1395183833
 GameObject:
   m_ObjectHideFlags: 0

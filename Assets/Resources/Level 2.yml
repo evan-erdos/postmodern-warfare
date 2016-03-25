@@ -21,7 +21,7 @@ carl_0: !!message
 
 carl_1: !!message
   delay: 2
-  trigger:Time
+  trigger: Time
   next: carl_2
   title: carl
   speaker: Chocolate

@@ -3,7 +3,7 @@
 
 
 init: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   speaker: Chocolate
   next: carl_0
@@ -11,7 +11,7 @@ init: !!message
     r u serious
 
 carl_0: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_1
   speaker: Chocolate
@@ -19,7 +19,7 @@ carl_0: !!message
     did u rly
 
 carl_1: !!message
-  delay: 4
+  delay: 2
   trigger:Time
   next: carl_2
   title: carl
@@ -28,7 +28,7 @@ carl_1: !!message
     not leave
 
 carl_2: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_3
   title: carl
@@ -37,16 +37,16 @@ carl_2: !!message
     do u speak american 
 
 carl_3: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_4
   title: carl
   speaker: Chocolate
   desc: >+
-    u violent lil shit
+    u lil shit
 
 carl_4: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_5
   title: carl
@@ -55,7 +55,7 @@ carl_4: !!message
     im just gonna tell u
 
 carl_5: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_6
   title: carl
@@ -64,7 +64,7 @@ carl_5: !!message
     ur gonna have a bad time 
 
 carl_6: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_7
   title: carl
@@ -73,7 +73,7 @@ carl_6: !!message
     u better have some tricks up ur marshmallowy ass
 
 carl_7: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_8
   title: carl
@@ -82,7 +82,7 @@ carl_7: !!message
     because i sure do
 
 carl_8: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_9
   title: carl
@@ -91,7 +91,7 @@ carl_8: !!message
     ...
 
 carl_9: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_10
   title: carl
@@ -100,7 +100,7 @@ carl_9: !!message
     have something up my ass
 
 carl_10: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_11
   title: carl
@@ -109,7 +109,7 @@ carl_10: !!message
     ...
 
 carl_11: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_12
   title: carl
@@ -118,7 +118,7 @@ carl_11: !!message
     anyway
 
 carl_12: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_13
   title: carl
@@ -127,7 +127,7 @@ carl_12: !!message
     probably ...
 
 carl_13: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_14
   title: carl
@@ -136,7 +136,7 @@ carl_13: !!message
     fuck away
 
 carl_14: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   title: carl
   speaker: Chocolate

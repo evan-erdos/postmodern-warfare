@@ -60,7 +60,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 189112}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.1, y: -3.4, z: -1}
+  m_LocalPosition: {x: -29.3, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 433022}
@@ -253,7 +253,7 @@ MonoBehaviour:
   speedForce: 250
   maxSpeed: 10
   jumpForce: 1500
-  maxHealth: 100
+  maxHealth: 350
   stretchAmount: 0.9
   squishAmount: -0.65
   potentialGun: {fileID: 0}

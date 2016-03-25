@@ -22,10 +22,8 @@ maybe_factory: !!message
     Maybe your **<rainbow>SHIP</rainbow>**
     is in the **Peeps Factory**?
 
-
 near_gun: !!message
   speaker: Commander
-  delay: 4
   trigger: Event
   desc: >
     Oh! An **Earth gun**! Earthians use these to **<rainbow>HURT</rainbow>** eachother.

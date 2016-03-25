@@ -79,6 +79,8 @@ public class Narration : MonoBehaviour {
 
 	public void DisplayMessage(string name) {
 		if (name==null) return;
+		if (!yml.messages.ContainsKey(name))
+			throw new System.Exception("No key: "+name);
 		DisplayMessage(yml.messages[name]); }
 
 	public void DisplayMessage(Message message) {

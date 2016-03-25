@@ -4923,7 +4923,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6627451, g: 0.72156864, b: 0.72156864, a: 0.019607844}
+  m_BackGroundColor: {r: 0.003921569, g: 0.003921569, b: 0.003921569, a: 0.019607844}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -9293,27 +9293,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 56.375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 112.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11483008, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: player

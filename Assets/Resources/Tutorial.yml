@@ -24,6 +24,7 @@ maybe_factory: !!message
 
 near_gun: !!message
   speaker: Commander
+  delay: 4
   trigger: Event
   desc: >
     Oh! An **Earth gun**! Earthians use these to **<rainbow>HURT</rainbow>** eachother.
@@ -55,12 +56,12 @@ control_panel: !!message
  #   Why don’t you give it a go? Press **K** or **X**. 
  #   Try it!
 
-# throw_gun: !!message
-#   delay: 4
-#   trigger: Event
-#   desc: >+
-#     Wondertastic! Oh! There's a 
-#     **<rainbow>SHIP PART</rainbow>** !
+throw_gun: !!message
+  delay: 4
+  trigger: Event
+  desc: >
+    Wondertastic! Oh! There's a 
+    **<rainbow>SHIP PART</rainbow>** !
 
 
 

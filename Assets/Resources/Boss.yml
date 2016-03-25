@@ -2,7 +2,7 @@
 ---
 
 init: !!message
-  delay: 4
+  delay: 2
   trigger: Event
   next: boss_0
   title: carl
@@ -12,7 +12,7 @@ init: !!message
 
 
 boss_0: !!message
-  delay: 4
+  delay: 2
   trigger: Event
   next: boss_1
   title: carl
@@ -21,7 +21,7 @@ boss_0: !!message
     i had something up my ass
 
 boss_1: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: boss_2
   title: carl
@@ -30,7 +30,7 @@ boss_1: !!message
     and it was UR DAD
 
 boss_2: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: boss_3
   title: carl
@@ -39,7 +39,7 @@ boss_2: !!message
     fuckin lmaoooooo
 
 boss_3: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   title: carl
   speaker: Chocolate

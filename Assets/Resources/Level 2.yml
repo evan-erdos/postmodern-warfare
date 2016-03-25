@@ -2,147 +2,147 @@
 ---
 
 
+
 init: !!message
-  delay: 4
+  delay: 2
   trigger: Time
-  speaker: Chocolate
+  speaker: Commander
   next: carl_0
-  desc: >
-    r u serious
+  desc: >+
+    Hopefully we won't run into him again...
 
 carl_0: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_1
   speaker: Chocolate
-  desc: >
+  desc: >+
     did u rly
 
 carl_1: !!message
-  delay: 4
-  trigger: Time
+  delay: 2
+  trigger:Time
   next: carl_2
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     not leave
 
 carl_2: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_3
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     do u speak american 
 
 carl_3: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_4
   title: carl
   speaker: Chocolate
-  desc: >
-    u violent lil shit
+  desc: >+
+    u lil shit
 
 carl_4: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_5
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     im just gonna tell u
 
 carl_5: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_6
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     ur gonna have a bad time 
 
 carl_6: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_7
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     u better have some tricks up ur marshmallowy ass
 
 carl_7: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_8
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     because i sure do
 
 carl_8: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_9
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     ...
 
 carl_9: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_10
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     have something up my ass
 
 carl_10: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_11
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     ...
 
 carl_11: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_12
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     anyway
 
 carl_12: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_13
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     probably ...
 
 carl_13: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   next: carl_14
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     fuck away
 
 carl_14: !!message
-  delay: 4
+  delay: 2
   trigger: Time
   title: carl
   speaker: Chocolate
-  desc: >
+  desc: >+
     nowish.
-
 
 
 

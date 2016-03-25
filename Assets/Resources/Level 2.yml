@@ -2,13 +2,14 @@
 ---
 
 
+
 init: !!message
   delay: 2
   trigger: Time
-  speaker: Chocolate
+  speaker: Commander
   next: carl_0
   desc: >+
-    r u serious
+    Hopefully we won't run into him again...
 
 carl_0: !!message
   delay: 2
@@ -142,7 +143,6 @@ carl_14: !!message
   speaker: Chocolate
   desc: >+
     nowish.
-
 
 
 

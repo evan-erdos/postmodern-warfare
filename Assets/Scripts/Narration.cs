@@ -64,7 +64,10 @@ public class Narration : MonoBehaviour {
 			yield return new WaitForEndOfFrame();
 		}
 		yield return new WaitForSeconds(message.Delay);
-		if (message.Persist) yield break;
+		if (message.Persist) {
+			print(message);
+			yield break;
+		}
 		while (alpha>0f) {
 			alpha -= 0.1f;
 			group.alpha = alpha;

@@ -58,8 +58,7 @@ public class SpecialLevel1StoryEvent : MonoBehaviour {
 		"narrator_13",
 		"narrator_14",
 	};
-
-
+		
 
 	// Use this for initialization
 	void Awake () {
@@ -94,6 +93,9 @@ public class SpecialLevel1StoryEvent : MonoBehaviour {
 				gun.transform.GetComponent<Rigidbody2D> ().AddForce (transform.right * gunForce);
 			} else if (currMsgIdx == 25) {
 				flyingAway = true;
+			} else if (currMsgIdx == 33) {
+				storyEventHappening = false;
+				player.transform.GetComponent<PlayerMovement> ().enabled = true;
 			} else {
 				narration.GetComponent<Narration> ().DisplayMessage (msgNames [currMsgIdx]);
 			}
@@ -108,19 +110,21 @@ public class SpecialLevel1StoryEvent : MonoBehaviour {
 
 		if (c.tag != "Player") return;
 
+		transform.GetComponent<BoxCollider2D> ().enabled = false;
+
 		storyEventHappening = true;
 
-		Debug.Log ("1");
+		//Debug.Log ("1");
 
 		// Stop Player from moving
 		c.GetComponent<PlayerMovement>().enabled = false;
 		//c.GetComponent<SpecialStoryEvent>().enabled = true;
 
-		Debug.Log ("2");
+		//Debug.Log ("2");
 
 		// Start story narration event
 		Story();
-		Debug.Log ("3");
+		//Debug.Log ("3");
 
 	}
 		

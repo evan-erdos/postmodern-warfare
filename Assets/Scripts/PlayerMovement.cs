@@ -110,6 +110,13 @@ public class PlayerMovement : MonoBehaviour {
 		IsStretching = Input.GetButton("Stretch") && !IsSquishing;
 
 		speed = Input.GetAxis("Horizontal")*0.5f;
+
+		if (Input.GetButtonDown("Next"))
+			SceneManager.LoadScene(
+				SceneManager.GetActiveScene().buildIndex+1);
+		else if (Input.GetButtonDown("Prev"))
+			SceneManager.LoadScene(
+				SceneManager.GetActiveScene().buildIndex-1);
 	}
 
 

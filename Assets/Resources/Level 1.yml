@@ -18,12 +18,14 @@ narrator_0: !!message
   desc: >
     Marshmallows! Sent to the incinertor!
 
+
 narrator_1: !!message
   delay: 4
   trigger: Time
   speaker: Commander
   desc: >
     The pain in their little marshmallow eyes!
+
 
 narrator_2: !!message
   delay: 4
@@ -47,16 +49,16 @@ narrator_4: !!message
    <rainbow>FREE THEM!</rainbow>
 
 carl_0: !!message
-  delay: 4
   trigger: Event
+  persist: true
   next: carl_1 
   speaker: Chocolate
   desc: >
    wat r u 
 
 carl_1: !!message
-  delay: 4
   trigger: Time
+  persist: true
   next: carl_2
   speaker: Chocolate
   desc: >
@@ -71,7 +73,7 @@ carl_2: !!message
    bork bork 
 
 narrator_5: !!message
-  delay: 4
+  persist: true
   trigger: Time
   next: carl_3
   speaker: Commander
@@ -195,7 +197,7 @@ carl_16: !!message
   next: carl_17
   speaker: Chocolate
   desc: >
-   so doggie,,, and ghostie 
+   so doggie... and ghostie 
 
 carl_17: !!message
   delay: 4
@@ -290,7 +292,7 @@ narrator_10: !!message
   next: narrator_11
   speaker: Commander
   desc: >
-    Don't believ in yourself.
+    Don't believe in yourself.
 
 narrator_11: !!message
   delay: 4

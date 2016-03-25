@@ -8,26 +8,57 @@ public class SpecialLevel1StoryEvent : MonoBehaviour {
 
 	public GameObject narration;
 	public GameObject player;
+	public GameObject baddie;
 	public GameObject handgun;
+	public GameObject flyTarget;
 
 	public float gunForce = 60000f;
+	public float flySpeed = 600f;
+	public float flyDelay = 10f;
+
+	Vector3 speed;
 
 	public int currMsgIdx = 0;
 
 	public bool storyEventHappening = false;
+	public bool flyingAway = false;
 
 	public static string[] msgNames = {
-		"choco-baddie1",
-		"choco-baddie2",
-		"choco-baddie3",
-		"choco-baddie4",
-		"choco-baddie5",
-		"choco-baddie6",
-		"choco-baddie7",
-		"choco-baddie8"
+		"carl_1",
+		"carl_2",
+		"narrator_5",
+		"carl_3",
+		"carl_4",
+		"carl_5",
+		"carl_6",
+		"carl_7",
+		"carl_8",
+		"carl_9",
+		"carl_10",
+		"carl_11",
+		"narrator_6",
+		"carl_12",
+		"carl_13",
+		"carl_14",
+		"carl_15",
+		"carl_16",
+		"carl_18",
+		"carl_19",
+		"carl_20",
+		"carl_21",
+		"carl_22",
+		"carl_23",
+		"carl_24",
+		"narrator_7",
+		"narrator_8",
+		"narrator_9",
+		"narrator_10",
+		"narrator_11",
+		"narrator_12",
+		"narrator_13",
+		"narrator_14",
 	};
-
-
+		
 
 	// Use this for initialization
 	void Awake () {
@@ -39,20 +70,38 @@ public class SpecialLevel1StoryEvent : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (flyingAway) {
+			baddie.transform.localPosition = Vector3.SmoothDamp (
+				baddie.transform.localPosition,
+				flyTarget.transform.position, ref speed, 0.8f,
+				flyDelay, Time.deltaTime);
+			if (Vector3.SqrMagnitude(baddie.transform.localPosition - 
+				flyTarget.transform.position) < 5) 
+			//if (baddie.transform.localPosition == flyTarget.transform.position)
+				flyingAway = false;
+			return;
+		}
+
+	
+		
 		if (!storyEventHappening)
 			return;
 		if (Input.GetButtonDown ("Throw")) {
-			if (currMsgIdx == 6) {
-				GameObject gun = (GameObject) Instantiate (handgun,
-					player.transform.position, Quaternion.identity);
-	
+			if (currMsgIdx == 4) {
+				GameObject gun = (GameObject)Instantiate (handgun,
+					                 player.transform.position, Quaternion.identity);
 				gun.transform.GetComponent<Rigidbody2D> ().AddForce (transform.right * gunForce);
-			
+			} else if (currMsgIdx == 25) {
+				flyingAway = true;
+			} else if (currMsgIdx == 33) {
+				storyEventHappening = false;
+				player.transform.GetComponent<PlayerMovement> ().enabled = true;
 			} else {
-				currMsgIdx++;
 				narration.GetComponent<Narration> ().DisplayMessage (msgNames [currMsgIdx]);
 			}
+			currMsgIdx++;
 		}
+
 	}
 
 	void OnTriggerEnter2D(Collider2D c) {
@@ -61,19 +110,21 @@ public class SpecialLevel1StoryEvent : MonoBehaviour {
 
 		if (c.tag != "Player") return;
 
+		transform.GetComponent<BoxCollider2D> ().enabled = false;
+
 		storyEventHappening = true;
 
-		Debug.Log ("1");
+		//Debug.Log ("1");
 
 		// Stop Player from moving
 		c.GetComponent<PlayerMovement>().enabled = false;
 		//c.GetComponent<SpecialStoryEvent>().enabled = true;
 
-		Debug.Log ("2");
+		//Debug.Log ("2");
 
 		// Start story narration event
 		Story();
-		Debug.Log ("3");
+		//Debug.Log ("3");
 
 	}
 		

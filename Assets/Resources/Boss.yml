@@ -4,22 +4,49 @@
 init: !!message
   delay: 4
   trigger: Event
-  next: pre-boss
-  desc: >
-    "Do you expect me to bark?"
+  next: boss_0
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    i told u lil buddy
 
 
-init-boss: !!message
+boss_0: !!message
   delay: 4
   trigger: Event
-  next: pre-boss
-  desc: >
-    "Do you expect me to bark?"
+  next: boss_1
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    i had something up my ass
 
-boss: !!message
+boss_1: !!message
   delay: 4
   trigger: Time
+  next: boss_2
+  title: carl
+  speaker: Chocolate
   desc: >
-    No, Mr. Mallowdog. I expect you to **<red>D</red><orange>I</orange><yellow>E</yellow>** !
+    and it was UR DAD
+
+boss_2: !!message
+  delay: 4
+  trigger: Time
+  next: boss_3
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    fuckin lmaoooooo
+
+boss_3: !!message
+  delay: 4
+  trigger: Time
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    come at me bro
+
+
+
 
 ...

@@ -5,291 +5,145 @@
 init: !!message
   delay: 4
   trigger: Time
-  title: ???
-  desc: >
-    Whooooa nelly! Hold your horses there, buckaroo! Do you see this?
+  speaker: Chocolate
+  next: carl_0
+  desc: >+
+    r u serious
 
-incinerator: !!message
+carl_0: !!message
   delay: 4
   trigger: Time
-  title: ???
-  desc: >
-    Marshmallows! Sent to the incinertor!
+  next: carl_1
+  speaker: Chocolate
+  desc: >+
+    did u rly
 
-pain: !!message
+carl_1: !!message
+  delay: 4
+  trigger:Time
+  next: carl_2
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    not leave
+
+carl_2: !!message
   delay: 4
   trigger: Time
-  title: ???
-  desc: >
-    The pain in their little marshmallow eyes!
+  next: carl_3
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    do u speak american 
 
-ellipsis: !!message
+carl_3: !!message
   delay: 4
   trigger: Time
-  title: ???
-  desc: >
+  next: carl_4
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    u violent lil shit
+
+carl_4: !!message
+  delay: 4
+  trigger: Time
+  next: carl_5
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    im just gonna tell u
+
+carl_5: !!message
+  delay: 4
+  trigger: Time
+  next: carl_6
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    ur gonna have a bad time 
+
+carl_6: !!message
+  delay: 4
+  trigger: Time
+  next: carl_7
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    u better have some tricks up ur marshmallowy ass
+
+carl_7: !!message
+  delay: 4
+  trigger: Time
+  next: carl_8
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    because i sure do
+
+carl_8: !!message
+  delay: 4
+  trigger: Time
+  next: carl_9
+  title: carl
+  speaker: Chocolate
+  desc: >+
     ...
 
-mission: !!message
+carl_9: !!message
   delay: 4
   trigger: Time
-  title: ???
-  desc: >
-    You know what you have to do, Mallowdog.
-
-free: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-   <rainbow>FREE THEM!</rainbow>
-
-wat: !!message
-  delay: 4
-  trigger: Event 
+  next: carl_10
   title: carl
-  desc: >
-    <brown> wat r u </brown>
+  speaker: Chocolate
+  desc: >+
+    have something up my ass
 
-doggie: !!message
+carl_10: !!message
   delay: 4
   trigger: Time
+  next: carl_11
   title: carl
-  desc: >
-    <brown> r u a doggie </brown>
-
-bork_0: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> bork bork </brown>
-
-fiend: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-    That's him! That <rainbow> fiend! </rainbow>
-
-bork_1: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> bork </brown>
-
-bork_2: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> doggie </brown>
-
-woah_0: !!message
-  delay: 4
-  trigger: Event
-  title: carl
-  desc: >
-    <brown> woah </brown>
-
-woah_1: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> how about </brown>
-
-woah_2: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> no </brown>
-
-dots: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
+  speaker: Chocolate
+  desc: >+
     ...
 
-fucko: !!message
+carl_11: !!message
+  delay: 4
+  trigger: Time
+  next: carl_12
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    anyway
+
+carl_12: !!message
+  delay: 4
+  trigger: Time
+  next: carl_13
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    probably ...
+
+carl_13: !!message
+  delay: 4
+  trigger: Time
+  next: carl_14
+  title: carl
+  speaker: Chocolate
+  desc: >+
+    fuck away
+
+carl_14: !!message
   delay: 4
   trigger: Time
   title: carl
-  desc: >
-   <brown> now listen here fucko </brown>
-
-request: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> im gonna have 2 request that u </brown>
-
-clam: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> clam tf down </brown>
-
-clamquestion: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-    <rainbow> Clam? </rainbow>
-
-ghostie: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> yes ghostie </brown>
-
-clam_cool: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> clam </brown>
-
-down: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> down </brown>
-
-moredots: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> ... </brown>
-
-dognghost: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> so doggie,,, and ghostie </brown>
-
-asku: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> im gonna have to ask u </brown>
-
-vacate: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> to kindly vacate the premises </brown>
-
-badstuff: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> ...or bad stuff might happen idk it's a crapshoot </brown>
-
-so: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> soooo </brown>
-
-go: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> im gonna go </brown>
-
-ideally: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> and ideally </brown>
-
-neveragain: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> ill never see u guys again </brown>
-
-bye: !!message
-  delay: 4
-  trigger: Time
-  title: carl
-  desc: >
-    <brown> so bye </brown>
-
-question: !!message
-  delay: 4
-  trigger: Time
-  desc: >
-    That <rainbow> creature... </rainbow>
-
-defeat: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-    You are going to have to defeat him in order to liberate the poor marshmallows being destroyed in this facility.
-
-listenup: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-    Listen up, Mallowdog. 
-
-notyou: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-    Don't believ in yourself.
-
-believe: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-    <rainbow> Believe in me! </rainbow>
-
-
-believeinyou: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-    <rainbow> Believe in me who believes in you! </rainbow>
-
-
-dotdot: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-    ...
-
-earthshow: !!message
-  delay: 4
-  trigger: Time
-  title: ???
-  desc: >
-    I learned that from an <rainbow> EARTH </rainbow> show.
+  speaker: Chocolate
+  desc: >+
+    nowish.
 
 
 
-...
+
+

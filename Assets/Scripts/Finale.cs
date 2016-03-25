@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 using UnityEngine.Events;
 using ui=UnityEngine.UI;
 using System.Collections;
@@ -24,7 +25,7 @@ public class Finale : MonoBehaviour {
 	}
 
 	IEnumerator Quitting() {
-		yield return new WaitForSeconds(60);
+		yield return new WaitForSeconds(90);
 		m_QuitEvent.Invoke();
 	}
 

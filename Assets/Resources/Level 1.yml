@@ -290,7 +290,7 @@ narrator_10: !!message
   next: narrator_11
   speaker: Commander
   desc: >
-    Don't believ in yourself.
+    Don't believe in yourself.
 
 narrator_11: !!message
   delay: 4

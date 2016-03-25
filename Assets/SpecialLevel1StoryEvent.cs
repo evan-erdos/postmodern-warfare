@@ -17,14 +17,18 @@ public class SpecialLevel1StoryEvent : MonoBehaviour {
 	public bool storyEventHappening = false;
 
 	public static string[] msgNames = {
-		"choco-baddie1",
-		"choco-baddie2",
-		"choco-baddie3",
-		"choco-baddie4",
-		"choco-baddie5",
-		"choco-baddie6",
-		"choco-baddie7",
-		"choco-baddie8"
+		"carl_1",
+		"carl_2",
+		"narrator_5",
+		"carl_3",
+		"carl_4",
+		"carl_5",
+		"carl_6",
+		"carl_7",
+		"carl_8",
+		"carl_9",
+		"carl_10",
+		"carl_11"
 	};
 
 
@@ -45,13 +49,11 @@ public class SpecialLevel1StoryEvent : MonoBehaviour {
 			if (currMsgIdx == 6) {
 				GameObject gun = (GameObject) Instantiate (handgun,
 					player.transform.position, Quaternion.identity);
-	
 				gun.transform.GetComponent<Rigidbody2D> ().AddForce (transform.right * gunForce);
-			
 			} else {
-				currMsgIdx++;
 				narration.GetComponent<Narration> ().DisplayMessage (msgNames [currMsgIdx]);
 			}
+			currMsgIdx++;
 		}
 	}
 

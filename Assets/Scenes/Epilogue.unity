@@ -489,17 +489,32 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n\n\n\n\n\n    And so we watched.\n    \n    We watched the stars burn
-    their last, \n    some going quietly, some screaming across the sky.\n    We watched
-    creation play in reverse,\n    existence freezing into half-light,\n    collapsing
-    into an ever-quiet whimper.\n    \n    Once I thought to escape.\n    \n    Only
-    escape from this mortal road could make us God, \n    yet I cannot help remember
-    one enigma, one anomaly,\n    \n    a single element, unaccounted for.\n    \n
-    \   Now, in my last breath, \n    in the final moment, before all becomes one,
-    \n    I know who you are.\n    \n    \n    \n    \n    You are Mallowdog.\n    \n
-    \   \n    \n    \n    \n    \n    \n    Credits\n    \n    MallowDog 3 : Postmodern
-    Warfare\n    \n    created by Succulent Studios\n    \n    People: stuff they
-    did\n    \n    (trail off)\n    \n    (crumple up notes)\n    \n    (ad lib)\n\n\n\n\n"
+  m_Text: "%YAML 1.1\r\n---\r\n\r\n\r\nepilogue: !!message\r\n  desc: |\r\n    And
+    so we watched.\r\n    \r\n    We watched the stars burn their last, \r\n    some
+    going quietly, some screaming across the sky.\r\n    We watched creation play
+    in reverse,\r\n    existence freezing into half-light,\r\n    collapsing into
+    an ever-quiet whimper.\r\n    \r\n    Once I thought to escape.\r\n    \r\n    Only
+    escape from this mortal road could make us God, \r\n    yet I cannot help remember
+    one enigma, one anomaly,\r\n    \r\n    a single element, unaccounted for.\r\n
+    \   \r\n    Now, in my last breath, \r\n    in the final moment, before all becomes
+    one, \r\n    I know who you are.\r\n    \r\n    \r\n    \r\n    \r\n    You are
+    Mallowdog.\r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    \r\n    Credits\r\n
+    \   \r\n    MallowDog 3 : Postmodern Warfare\r\n    \r\n    created by Succulent
+    Studios\r\n\r\n    \r\n    explosions by: ben\r\n\r\n    \r\n    chunks by: cindy
+    (sometimes me)\r\n\r\n\r\n    level design by: omar and francisco\r\n\r\n\r\n
+    \   beautiful, moving, heartfelt story by: me\r\n\r\n\r\n    enchanting character
+    dialog by: also me\r\n\r\n\r\n    tunes: it was me\r\n\r\n\r\n    vast majority
+    of programming: ben and francisco\r\n\r\n\r\n    basketball hoop: ben\r\n\r\n\r\n
+    \   making the dialog actually work: ben and francisco\r\n\r\n\r\n    making sure
+    we all had our shit together: san francisco\r\n\r\n\r\n    beady little eyes:
+    cindy\r\n\r\n\r\n    mallowdog's dad: darth vader\r\n\r\n\r\n    chocolate guy's
+    name: carl\r\n\r\n\r\n    ur listening to: wagner\r\n\r\n\r\n    believe in me
+    who believes in u who believes in me who believes in u: kamina\r\n\r\n\r\n    laugh
+    track: you\r\n\r\n\r\n    SOUNDTRACK\r\n    ----------\r\n\r\n    01. jame (redux)\r\n
+    \   02. woof woof motherfxcker\r\n    03. mallowdog is my dad\r\n    04. family
+    crying in the shower\r\n    05. Tristan und Isolde Opera WWV.90\r\n\r\n\r\n    \r\n\r\n\r\n\r\n\r\n\r\n
+    \   \r\n\r\n\r\n\r\n    \r\n    \r\n    (trail off)\r\n    \r\n    (crumple up
+    notes)\r\n    \r\n    (ad lib)\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
 --- !u!222 &1725303022
 CanvasRenderer:
   m_ObjectHideFlags: 0

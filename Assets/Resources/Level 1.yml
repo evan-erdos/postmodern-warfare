@@ -49,16 +49,16 @@ narrator_4: !!message
    <rainbow>FREE THEM!</rainbow>
 
 carl_0: !!message
-  delay: 4
   trigger: Event
+  persist: true
   next: carl_1 
   speaker: Chocolate
   desc: >
    wat r u 
 
 carl_1: !!message
-  delay: 4
   trigger: Time
+  persist: true
   next: carl_2
   speaker: Chocolate
   desc: >
@@ -73,7 +73,7 @@ carl_2: !!message
    bork bork 
 
 narrator_5: !!message
-  delay: 4
+  persist: true
   trigger: Time
   next: carl_3
   speaker: Commander
@@ -197,7 +197,7 @@ carl_16: !!message
   next: carl_17
   speaker: Chocolate
   desc: >
-   so doggie,,, and ghostie 
+   so doggie... and ghostie 
 
 carl_17: !!message
   delay: 4

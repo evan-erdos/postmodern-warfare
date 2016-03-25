@@ -5356,10 +5356,15 @@ MonoBehaviour:
       PublicKeyToken=null
   narration: {fileID: 629622213}
   player: {fileID: 1713090560}
+  baddie: {fileID: 1285362054}
   handgun: {fileID: 138886, guid: b0532729bfc3746c9b4f17b7ec530475, type: 2}
+  flyTarget: {fileID: 1803427106}
   gunForce: 8000
+  flySpeed: 600
+  flyDelay: 10
   currMsgIdx: 0
   storyEventHappening: 0
+  flyingAway: 0
 --- !u!61 &405226096
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5381,9 +5386,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 405226094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 117.33, y: -2, z: 0}
+  m_LocalPosition: {x: 121.1, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1803427107}
   m_Father: {fileID: 0}
   m_RootOrder: 19
 --- !u!1 &411100077
@@ -9287,27 +9293,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 56.375
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -50
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 112.75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22481644, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11483008, guid: 9ce890e88768346bab3350b464589676, type: 2}
       propertyPath: player
@@ -17921,6 +17927,10 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.8, y: 0.4}
+--- !u!1 &1285362054 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 151650, guid: a31ae2fe7139d4edf98f497466034ba0, type: 2}
+  m_PrefabInternal: {fileID: 696185091}
 --- !u!1 &1286086424
 GameObject:
   m_ObjectHideFlags: 0
@@ -25959,6 +25969,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 411100078}
   m_RootOrder: 122
+--- !u!1 &1803427106
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1803427107}
+  m_Layer: 0
+  m_Name: BaddieFlyTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1803427107
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1803427106}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 15.4, y: 18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 405226097}
+  m_RootOrder: 0
 --- !u!1 &1804947309
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,9 @@ using System.Collections;
 
 public class StartMovie : MonoBehaviour {
     void Start() {
+#if !(UNITY_IOS || UNITY_ANDROID)
     	((MovieTexture) GetComponent<ui::Image>().material.mainTexture).Play();
+#endif
     	StartCoroutine(DestroyMovie(12));
     }
 

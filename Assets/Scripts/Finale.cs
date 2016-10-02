@@ -38,7 +38,7 @@ public class Finale : MonoBehaviour {
 
 
 	IEnumerator AfterQuitting() {
-		yield return new WaitForSeconds(5);
+		yield return new WaitForSeconds(3);
 		Object.Instantiate(
 			explosion,
 			transform.position,

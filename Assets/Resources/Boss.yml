@@ -36,17 +36,7 @@ boss_2: !!message
   title: carl
   speaker: Chocolate
   desc: >+
-    fuckin lmaoooooo
-
-boss_3: !!message
-  delay: 2
-  trigger: Time
-  title: carl
-  speaker: Chocolate
-  desc: >+
-    come at me bro
-
-
+    come at me bruh
 
 
 ...
